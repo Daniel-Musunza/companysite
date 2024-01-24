@@ -1769,7 +1769,7 @@ footer {
   }
 
   .header-social-container,
-  .header-top-actions { display: none; }
+  /* .header-top-actions { display: none; } */
 
   .header-alert-news {
     color: var(--sonic-silver);

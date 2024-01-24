@@ -15,7 +15,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Space+Grotesk:wght@300&display=swap');
       </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/332a0bbd7c.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">  
@@ -32,7 +34,111 @@
           height: auto;
         }
       </style>
-  </head>
+  <style>
+   
+     
+    
+      @media screen and (min-width: 768px) {
+        .humbuger{
+          display: none;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        header{
+          position: fixed;
+          display: flex;
+          flex-direction: column;
+          margin-top: -50px;
+          width: 100%;
+          z-index: 999;
+        }
+        header img{
+        width: 60px;
+        }
+        .header-top{
+        display: flex;
+        width: 25%;
+        z-index: 9999;
+      }
+      .header-top .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .header-social-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+      }
+      .social-link{
+        width: 30px;
+        border-radius: 2px;
+        background-color: aliceblue;
+        color: black;
+      }
+        .slider {
+        width: 400%;
+        overflow: hidden;
+      }
+        .slide1,
+        .slide2,
+        .slide3,
+        .slide4 {
+          height: 150px;
+          width: auto;
+        }
+
+        .humbuger{
+          display: block;
+          font-size: 30px;
+          right: 10px;
+        }
+        .navbar {
+          display: none;
+        }
+
+        
+        .desktop-navigation-menu{
+          display: flex;
+          background-color: black;
+          color: aliceblue;
+          padding: 20px;
+        }
+        .dropdown-panel {
+    display: none;
+    color: white; /* Set the text color to white */
+    /* Other styling for your dropdown panel */
+  }
+        .menu-category{
+          margin-top: 20px;
+        }
+        .menu-title,
+        .dropdown-panel-list .menu-title {
+          color: antiquewhite!important;
+        }
+        .dropdown-panel-list{
+          max-width: 25%;
+          display: flex;
+          flex-wrap: wrap;
+          list-style-type: none;
+    padding: 0;
+    margin: 0;
+        }
+        .dropdown-panel-list li{
+          padding: 8px 0;
+          padding-right: 10px;
+          color: antiquewhite!important;
+        }
+     
+        footer{
+          padding: 20px;
+        }
+      }
+    </style>
+    
+
+</head>
   
   <body>
    
@@ -90,18 +196,55 @@
   
   
   
-      <nav class="desktop-navigation-menu">
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var menuButton = document.getElementById("menu");
+        var navbar = document.querySelector(".navbar");
+        var productsButton = document.getElementById("products");
+        var dropdownPanel = document.querySelector(".dropdown-panel");
+    
+        menuButton.addEventListener("click", function () {
+          // Toggle the display property when clicking the menu button
+          if (navbar.style.display === "block") {
+            navbar.style.display = "none";
+          } else {
+            navbar.style.display = "block";
+          }
+        });
+    
+        productsButton.addEventListener("click", function () {
+          // Toggle the display property when clicking the products button
+          if (dropdownPanel.style.display === "block") {
+            dropdownPanel.style.display = "none";
+          } else {
+            dropdownPanel.style.display = "block";
+          }
+        });
+    
+        // Close the navbar and dropdown panel when clicking outside of them
+        document.addEventListener("click", function (event) {
+          if (!event.target.closest("#menu, .navbar, #products, .dropdown-panel")) {
+            navbar.style.display = "none";
+            dropdownPanel.style.display = "none";
+          }
+        });
+      });
+    </script>
+    <nav class="desktop-navigation-menu">
   
         <div class="container">
   
-          <ul class="desktop-menu-category-list">
+          <div class="humbuger" id="menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="desktop-menu-category-list navbar">
   
             <li class="menu-category">
               <a href="../../index.html" class="menu-title">Home</a>
             </li>
   
             <li class="menu-category">
-              <a href="#" class="menu-title">Products</a>
+             <a href="#" class="menu-title" id="products">Products</a>
   
               <div class="dropdown-panel">
   

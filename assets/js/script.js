@@ -108,3 +108,9 @@ for (let i = 0; i < accordionBtn.length; i++) {
   });
 
 }
+
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu').onclick = () =>{
+    navbar.classList.toggle('active')
+}
