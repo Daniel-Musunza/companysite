@@ -33,112 +33,117 @@
           height: auto;
         }
       </style>
-  <style>
+ <style>
    
-      @media screen and (min-width: 768px) {
-        .humbuger{
-          display: none;
-        }
-        .prod-small{
-          display: none;
-        }
-      }
-      @media screen and (max-width: 768px) {
-        header{
-          position: fixed;
-          display: flex;
-          flex-direction: column;
-          margin-top: -50px;
-          width: 100%;
-          z-index: 999;
-        }
-        header img{
-        width: 60px;
-        }
-        .header-top{
-        display: flex;
-        width: 25%;
-        z-index: 9999;
-      }
-      .header-top .container{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-      }
-      .header-social-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  @media screen and (min-width: 768px) {
+    .humbuger{
+      display: none;
+    }
+    .prod-small{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    header{
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      margin-top: -50px;
+      width: 100%;
+      z-index: 999;
+    }
+    header img{
+    width: 60px;
+    }
+    .header-top{
+    display: flex;
+    width: 100%;
+    z-index: 9999;
+  }
+  .header-top .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .social-link{
+    width: 30px;
+    border-radius: 2px;
+    background-color: aliceblue;
+    color: black;
+  }
     
-      }
-      .social-link{
-        width: 30px;
-        border-radius: 2px;
-        background-color: aliceblue;
-        color: black;
-      }
-        .slider {
-        width: 400%;
-        overflow: hidden;
-      }
-        .slide1,
-        .slide2,
-        .slide3,
-        .slide4 {
-          height: 150px;
-          width: auto;
-        }
 
-        .humbuger{
-          display: block;
-          font-size: 30px;
-          right: 10px;
-        }
-        .navbar {
-          display: none;
-        }
+    .humbuger{
+      display: block;
+      font-size: 30px;
+      right: 10px;
+    }
+    .navbar {
+      display: none;
+    }
 
-        
-        .desktop-navigation-menu{
-          display: flex;
-          background-color: black;
-          color: aliceblue;
-          padding: 20px;
-        }
-        .dropdown-panel {
+    
+    .desktop-navigation-menu{
+      display: flex;
+      background-color: black;
+      color: aliceblue;
+      padding: 20px;
+    }
+    .dropdown-panel {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+padding-left: 20px;
+}
+    .menu-category{
+      margin-top: 20px;
+    }
+    .menu-title,
+    .dropdown-panel-list .menu-title {
+      color: antiquewhite!important;
+    }
+    .dropdown-panel-list{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+    .dropdown-panel-list li a{
+      padding: 8px 0;
+      padding-right: 10px;
+      color: #fff;
+    }
+   .small-heading{
+    color: yellow!important;
+   }
+   .prod-big{
+    display: none;
+   }
+   .portfolio .row{ 
     display: flex;
     flex-wrap: wrap;
-    width: 25%;
-    padding-left: 20px;
+    padding: 0!important;
   }
-        .menu-category{
-          margin-top: 20px;
-        }
-        .menu-title,
-        .dropdown-panel-list .menu-title {
-          color: antiquewhite!important;
-        }
-        .dropdown-panel-list{
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-        }
-        .dropdown-panel-list li a{
-          padding: 8px 0;
-          padding-right: 10px;
-          color: #fff;
-        }
-       .small-heading{
-        color: yellow!important;
-       }
-       .prod-big{
-        display: none;
-       }
-        footer{
-          padding: 20px;
-        }
-      }
-    </style>
+ .portfolio .row .box{
+    width: 100%!important;
+    height: auto;
+    
+  }
+  .imeji{
+    padding-top: 150px;
+    width: 100%!important;
+    height: auto;
+  }
+    footer{
+      padding: 20px;
+    }
+  }
+</style>
     
 
 </head>

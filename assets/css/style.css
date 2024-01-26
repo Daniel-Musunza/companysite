@@ -2629,3 +2629,10 @@ footer {
   }
 
 }
+
+@media screen and (max-width: 768px) {
+ .menu-category .dropdown-panel {
+    height: 80vh;
+    overflow-y: scroll!important;
+  }
+}
