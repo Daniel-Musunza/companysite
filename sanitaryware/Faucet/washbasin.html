@@ -36,10 +36,11 @@
       </style>
   <style>
    
-     
-    
       @media screen and (min-width: 768px) {
         .humbuger{
+          display: none;
+        }
+        .prod-small{
           display: none;
         }
       }
@@ -106,9 +107,10 @@
           padding: 20px;
         }
         .dropdown-panel {
-    display: none;
-    color: white; /* Set the text color to white */
-    /* Other styling for your dropdown panel */
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    padding-left: 20px;
   }
         .menu-category{
           margin-top: 20px;
@@ -118,19 +120,21 @@
           color: antiquewhite!important;
         }
         .dropdown-panel-list{
-          max-width: 25%;
+          width: 50%;
           display: flex;
-          flex-wrap: wrap;
-          list-style-type: none;
-    padding: 0;
-    margin: 0;
+          flex-direction: column;
         }
-        .dropdown-panel-list li{
+        .dropdown-panel-list li a{
           padding: 8px 0;
           padding-right: 10px;
-          color: antiquewhite!important;
+          color: #fff;
         }
-     
+       .small-heading{
+        color: yellow!important;
+       }
+       .prod-big{
+        display: none;
+       }
         footer{
           padding: 20px;
         }
@@ -243,14 +247,15 @@
             </li>
   
             <li class="menu-category">
-             <a href="#" class="menu-title" id="products">Products</a>
+             <a href="#" class="menu-title prod-small" id="products">Products</a>
+            <a href="#" class="menu-title prod-big">Products</a>
   
               <div class="dropdown-panel">
   
                 <ul class="dropdown-panel-list">
   
                   <li class="menu-title">
-                    <a href="../sanitaryware.html">Sanitary Ware</a>
+                    <a href="../sanitaryware.html" class="small-heading">Sanitary Ware</a>
                   </li>
   
                   <li class="panel-list-item">
@@ -288,7 +293,7 @@
                 <ul class="dropdown-panel-list">
   
                   <li class="menu-title">
-                    <a href="../../Tiles/tiles.html">Tiles</a>
+                    <a href="../../Tiles/tiles.html" class="small-heading">Tiles</a>
                   </li>
   
                   <li class="panel-list-item">
@@ -322,7 +327,7 @@
                 <ul class="dropdown-panel-list">
   
                   <li class="menu-title">
-                    <a href="../../ironmongery/im.html">IronMongery</a>
+                    <a href="../../ironmongery/im.html" class="small-heading">IronMongery</a>
                   </li>
   
                   <li class="panel-list-item">
@@ -348,7 +353,7 @@
                 <ul class="dropdown-panel-list">
   
                   <li class="menu-title">
-                    <a href="../../timber/timber.html">Wood Products</a>
+                    <a href="../../timber/timber.html" class="small-heading">Wood Products</a>
                   </li>
   
                   <li class="panel-list-item">
@@ -382,7 +387,7 @@
                 <ul class="dropdown-panel-list">
   
                   <li class="menu-title">
-                    <a href="../../Tools/tools.html">Tools</a>
+                    <a href="../../Tools/tools.html" class="small-heading">Tools</a>
                   </li>
   
                   <li class="panel-list-item">
@@ -438,7 +443,7 @@
                 <ul class="dropdown-panel-list">
   
                   <li class="menu-title">
-                    <a href="../../steel/steel.html">Steel and Wire Products</a>
+                    <a href="../../steel/steel.html" class="small-heading">Steel and Wire Products</a>
                   </li>
   
                   <li class="panel-list-item">
@@ -466,7 +471,7 @@
                 <ul class="dropdown-panel-list">
   
                   <li class="menu-title">
-                    <a href="../../otherProducts/op.html">Other Products</a>
+                    <a href="../../otherProducts/op.html"  class="small-heading">Other Products</a>
                   </li>
   
                   <li class="panel-list-item">
@@ -572,7 +577,7 @@
           <li class="menu-category">
   
             <button class="accordion-menu" data-accordion-btn>
-              <p class="menu-title">Sanitary Ware</p>
+              <p class="menu-title" class="small-heading">Sanitary Ware</p>
   
               <div>
                 <ion-icon name="add-outline" class="add-icon"></ion-icon>
@@ -1744,7 +1749,7 @@
   
           <div class="footer-category-box">
   
-            <h3 class="category-box-title">Sanitary Ware :</h3>
+            <h3 class="category-box-title" class="small-heading">Sanitary Ware :</h3>
   
             <a href="https://www.kohler.com/en" class="footer-category-link">Kohler</a>
             <a href="https://cobra.lixil.co.za/" class="footer-category-link">Cobra</a>
@@ -1850,11 +1855,11 @@
             </li>
   
             <li class="footer-nav-item">
-              <a href="../sanitaryware/sanitaryware.html" class="footer-nav-link">Sanitary Ware</a>
+              <a href="../sanitaryware/sanitaryware.html" class="footer-nav-link" class="small-heading">Sanitary Ware</a>
             </li>
   
             <li class="footer-nav-item">
-              <a href="../Tiles/tiles.html" class="footer-nav-link">Tiles</a>
+              <a href="../Tiles/tiles.html" class="footer-nav-link" class="small-heading">Tiles</a>
             </li>
   
             <li class="footer-nav-item">
