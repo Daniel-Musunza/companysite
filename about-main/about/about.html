@@ -135,12 +135,14 @@
           padding: 20px;
         }
         .dropdown-panel {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    min-height: fit-content;
-    padding-left: 20px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 20px;
+  overflow-y: auto; /* Add this line to enable vertical scrolling */
+  max-height: 500px; /* Adjust the max-height as needed */
+}
+
         .menu-category{
           margin-top: 20px;
         }
