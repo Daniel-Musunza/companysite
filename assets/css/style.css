@@ -2632,7 +2632,7 @@ footer {
 
 @media screen and (max-width: 768px) {
  .menu-category .dropdown-panel {
-    height: 80vh;
+    min-height: max-content;
     overflow-y: scroll!important;
   }
 }
