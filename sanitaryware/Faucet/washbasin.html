@@ -40,9 +40,15 @@
         .humbuger{
           display: none;
         }
-        .prod-small{
+         .prod-small{
           display: none;
         }
+        .desktopbar{
+          display:flex;
+        }
+      .navbar{
+        display: none;
+      }
       }
       @media screen and (max-width: 768px) {
         header{
@@ -90,11 +96,14 @@
         }
 
         
-        .desktop-navigation-menu{
+         .desktop-navigation-menu{
           display: flex;
           background-color: black;
           color: aliceblue;
           padding: 20px;
+        }
+        .desktopbar{
+          display:none;
         }
        .dropdown-panel {
         display: flex;
@@ -241,8 +250,8 @@
             </li>
   
             <li class="menu-category">
-             <a href="#" class="menu-title prod-small" id="products">Products</a>
-            <a href="#" class="menu-title prod-big">Products</a>
+              <a class="menu-title prod-small" id="products">Products</a>
+             <a class="menu-title prod-big">Products</a>
   
               <div class="dropdown-panel">
   
@@ -257,7 +266,7 @@
                   </li>
   
                   <li class="panel-list-item">
-                    <a href="#" target="_blank">Faucets</a>
+                    <a  target="_blank">Faucets</a>
                   </li>
   
                   <li class="panel-list-item">
@@ -311,7 +320,7 @@
                   </li>
   
                   <li class="panel-list-item">
-                    <a href="#">
+                    <a >
   
                     </a>
                   </li>
@@ -514,7 +523,7 @@
               <a href="../../contact/contact.html" class="menu-title">Contact Us</a>
   
             </li>
-            <li><i class='bx bx-moon change-theme' id="theme-button"></i>
+             
             </li>
           </ul>
   
@@ -933,10 +942,7 @@
                     <p class="menu-title1"> corner wash basin</p>
                   </div>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                 
                  
                
                 </li>
@@ -971,10 +977,7 @@
                     <p class="menu-title1">full pedestal wash basin</p>
                   </div>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                 
 
                 
 
@@ -990,10 +993,7 @@
                     <p class="menu-title1"> half pedestal wash basin</p>
                   </div>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                 
 
 
                 
@@ -1010,10 +1010,7 @@
                     <p class="menu-title1">Integrated pedestal basin</p>
                   </div>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                 
                 
 
            
@@ -1033,10 +1030,7 @@
                     <p class="menu-title1">under counter wash basin</p>
                   </div>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                 
                 
 
               </li>
@@ -1061,7 +1055,7 @@
 
                   <div class="showcase-content">
 
-                    <a href="#">
+                    <a >
                       <h4 class="showcase-title">Kohler</h4>
                     </a>
 
@@ -1076,7 +1070,7 @@
 
                   <div class="showcase-content">
 
-                    <a href="#">
+                    <a >
                       <h4 class="showcase-title">Hindware</h4>
                     </a>
                  
@@ -1091,7 +1085,7 @@
 
                   <div class="showcase-content">
 
-                    <a href="#">
+                    <a >
                       <h4 class="showcase-title">Lycos</h4>
                     </a>
                     
@@ -1105,7 +1099,7 @@
 
                   <div class="showcase-content">
 
-                    <a href="#">
+                    <a >
                       <h4 class="showcase-title">Signature</h4>
                     </a>
                 
@@ -1120,7 +1114,7 @@
 
                   <div class="showcase-content">
 
-                    <a href="#">
+                    <a >
                       <h4 class="showcase-title">Frencia</h4>
                     </a>
                     
@@ -1133,7 +1127,7 @@
 
                   <div class="showcase-content">
 
-                    <a href="#">
+                    <a >
                       <h4 class="showcase-title">Economical</h4>
                     </a>
                     
@@ -1203,9 +1197,9 @@
                 
                 <!-- <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">KOHLER IRON RIDGE</a>
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
 
-                  <a href="#">
+                  <a >
                     <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
                   </a>
 
@@ -1260,9 +1254,9 @@
 
                 <!-- <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">KOHLER IRON RIDGE</a>
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
 
-                  <a href="#">
+                  <a >
                     <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
                   </a>
 
@@ -1316,9 +1310,9 @@
 
                 <!-- <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">KOHLER IRON RIDGE</a>
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
 
-                  <a href="#">
+                  <a >
                     <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
                   </a>
 
@@ -1372,9 +1366,9 @@
 
                 <!-- <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">KOHLER IRON RIDGE</a>
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
 
-                  <a href="#">
+                  <a >
                     <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
                   </a>
 
@@ -1427,9 +1421,9 @@
 
                 <!-- <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">KOHLER IRON RIDGE</a>
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
 
-                  <a href="#">
+                  <a >
                     <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
                   </a>
 
@@ -1481,9 +1475,9 @@
 
                 <!-- <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">KOHLER IRON RIDGE</a>
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
 
-                  <a href="#">
+                  <a >
                     <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
                   </a>
 
@@ -1536,9 +1530,9 @@
 
                 <!-- <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">KOHLER IRON RIDGE</a>
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
 
-                  <a href="#">
+                  <a >
                     <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
                   </a>
 
@@ -1591,9 +1585,9 @@
 
                 <!-- <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">KOHLER IRON RIDGE</a>
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
 
-                  <a href="#">
+                  <a >
                     <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
                   </a>
 
@@ -1646,9 +1640,9 @@
 
                 <!-- <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">KOHLER IRON RIDGE</a>
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
 
-                  <a href="#">
+                  <a >
                     <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
                   </a>
 
@@ -1701,9 +1695,9 @@
 
                 <!-- <div class="showcase-content">
 
-                  <a href="#" class="showcase-category">KOHLER IRON RIDGE</a>
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
 
-                  <a href="#">
+                  <a >
                     <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
                   </a>
 
@@ -1763,7 +1757,7 @@
   
             <a href="https://www.simpolo.net/" class="footer-category-link">Simpolo</a>
             <a href="https://themoderngroup.co/modern-tiles" class="footer-category-link">Modern Tiles</a>
-            <a href="#" class="footer-category-link">Micasso</a>
+             <a class="footer-category-link">Micasso</a>
             <a href="https://www.fusiongranito.com/" class="footer-category-link">Fusion</a>
             <a href="https://www.rioceramic.com/" class="footer-category-link">Rio</a>
   
@@ -1774,7 +1768,7 @@
   
             <a href="https://www.dorsetaustralia.com.au/" class="footer-category-link">Dorset</a>
             <a href="https://www.dormakabagroup.com/en" class="footer-category-link">Dormakaba</a>
-            <a href="#" class="footer-category-link">Suzu</a>
+             <a class="footer-category-link">Suzu</a>
             <a href="https://www.unionironmetal.com/" class="footer-category-link">Union</a>
             <a href="https://www.yalehome.com/us/en/products/door-hardware" class="footer-category-link">Yale</a>
   
@@ -1895,7 +1889,7 @@
             </li>
   
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Terms and conditions</a>
+               <a class="footer-nav-link">Terms and conditions</a>
             </li>
   
             <li class="footer-nav-item">
@@ -1913,15 +1907,15 @@
             </li>
   
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Importers</a>
+               <a class="footer-nav-link">Importers</a>
             </li>
   
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Distributors</a>
+               <a class="footer-nav-link">Distributors</a>
             </li>
   
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Retailers</a>
+               <a class="footer-nav-link">Retailers</a>
             </li>
   
   

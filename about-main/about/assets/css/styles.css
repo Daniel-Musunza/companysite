@@ -570,10 +570,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 background: linear-gradient(90deg, rgba(244,237,15,1) 22%, rgba(0,0,0,1) 51%);
 }
 .header-user-actions,
-.desktop-navigation-menu { display: none; 
 
-
-}
 
 .header-main {
   padding: 20px 0;

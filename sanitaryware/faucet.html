@@ -29,9 +29,15 @@
         .humbuger{
           display: none;
         }
-        .prod-small{
+         .prod-small{
           display: none;
         }
+        .desktopbar{
+          display:flex;
+        }
+      .navbar{
+        display: none;
+      }
       }
       @media screen and (max-width: 768px) {
         header{
@@ -89,11 +95,14 @@
         }
 
         
-        .desktop-navigation-menu{
+         .desktop-navigation-menu{
           display: flex;
           background-color: black;
           color: aliceblue;
           padding: 20px;
+        }
+        .desktopbar{
+          display:none;
         }
         .dropdown-panel {
     display: flex;
@@ -145,7 +154,7 @@
   
         <div class="container">
   
-          <a href="#" class="header-logo">
+           <a class="header-logo">
             <img src="assets\images\logo\Logo.png" alt="Megha's logo" width="120" height="36">
           </a>
         
@@ -237,8 +246,8 @@
             </li>
   
             <li class="menu-category">
-             <a href="#" class="menu-title prod-small" id="products">Products</a>
-            <a href="#" class="menu-title prod-big">Products</a>
+              <a class="menu-title prod-small" id="products">Products</a>
+             <a class="menu-title prod-big">Products</a>
   
               <div class="dropdown-panel">
   
@@ -272,7 +281,7 @@
                   </li>
   
                   <li class="panel-list-item">
-                    <a href="#">
+                    <a >
                      
                         
                     </a>
@@ -307,7 +316,7 @@
                   </li>
   
                   <li class="panel-list-item">
-                    <a href="#">
+                    <a >
                       
                     </a>
                   </li>
@@ -333,7 +342,7 @@
                   </li>
   
                   <li class="panel-list-item">
-                    <a href="#">
+                    <a >
                       
                     </a>
                   </li>
@@ -367,7 +376,7 @@
                     <a href="timber\timber.html">MDF/MFC</a>
                   </li>
                   <li class="panel-list-item">
-                    <a href="#">
+                    <a >
                       
                     </a>
                   </li>
@@ -420,7 +429,7 @@
                     <a href="Tools\tools.html">Water Pump</a>
                   </li>
                   <li class="panel-list-item">
-                    <a href="#">
+                    <a >
                       
                     </a>
                   </li>
@@ -450,7 +459,7 @@
   
   
                   <li class="panel-list-item">
-                    <a href="#">
+                    <a >
                       
                     </a>
                   </li>
@@ -484,7 +493,7 @@
                   </li>
   
                   <li class="panel-list-item">
-                    <a href="#">
+                    <a >
                      
                     </a>
                   </li>
@@ -557,7 +566,7 @@
         <ul class="mobile-menu-category-list">
   
           <li class="menu-category">
-            <a href="#" class="menu-title">Home</a>
+             <a class="menu-title">Home</a>
           </li>
   
           <li class="menu-category">
@@ -574,22 +583,22 @@
             <ul class="submenu-category-list" data-accordion>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Sinks</a>
+                 <a class="submenu-title">Sinks</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Faucets</a>
+                 <a class="submenu-title">Faucets</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Showers</a>
+                 <a class="submenu-title">Showers</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Toilets</a>
+                 <a class="submenu-title">Toilets</a>
               </li>
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Bath Tubs</a>
+                 <a class="submenu-title">Bath Tubs</a>
               </li>
             </ul>
   
@@ -609,23 +618,23 @@
             <ul class="submenu-category-list" data-accordion>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Kitchen</a>
+                 <a class="submenu-title">Kitchen</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Living room</a>
+                 <a class="submenu-title">Living room</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Outdoor</a>
+                 <a class="submenu-title">Outdoor</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Bathroom</a>
+                 <a class="submenu-title">Bathroom</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Commercial</a>
+                 <a class="submenu-title">Commercial</a>
               </li>
             </ul>
   
@@ -645,23 +654,23 @@
             <ul class="submenu-category-list" data-accordion>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Power Tools</a>
+                 <a class="submenu-title">Power Tools</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Power Tools Accessories</a>
+                 <a class="submenu-title">Power Tools Accessories</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Hand Tools</a>
+                 <a class="submenu-title">Hand Tools</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Bench Tools </a>
+                 <a class="submenu-title">Bench Tools </a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Generators</a>
+                 <a class="submenu-title">Generators</a>
               </li>
             </ul>
   
@@ -681,15 +690,15 @@
             <ul class="submenu-category-list" data-accordion>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Bars</a>
+                 <a class="submenu-title">Bars</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Tubes</a>
+                 <a class="submenu-title">Tubes</a>
               </li>
   
               <li class="submenu-category">
-                <a href="#" class="submenu-title">Wires</a>
+                 <a class="submenu-title">Wires</a>
               </li>
   
             </ul>
@@ -697,19 +706,19 @@
           </li>
   
           <li class="menu-category">
-            <a href="#" class="menu-title">About Company</a>
+             <a class="menu-title">About Company</a>
           </li>
   
           <li class="menu-category">
-            <a href="#" class="menu-title">Suppliers</a>
+             <a class="menu-title">Suppliers</a>
           </li>
   
           <li class="menu-category">
-            <a href="#" class="menu-title">Projects</a>
+             <a class="menu-title">Projects</a>
           </li>
   
           <li class="menu-category">
-            <a href="#" class="menu-title">Contact Us</a>
+             <a class="menu-title">Contact Us</a>
           </li>
         </ul>
   
@@ -723,25 +732,25 @@
           <ul class="menu-social-container">
   
             <li>
-              <a href="#" class="social-link">
+               <a class="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
   
             <li>
-              <a href="#" class="social-link">
+               <a class="social-link">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
   
             <li>
-              <a href="#" class="social-link">
+               <a class="social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
   
             <li>
-              <a href="#" class="social-link">
+               <a class="social-link">
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
@@ -899,7 +908,7 @@
   
             <a href="https://www.simpolo.net/" class="footer-category-link">Simpolo</a>
             <a href="https://themoderngroup.co/modern-tiles" class="footer-category-link">Modern Tiles</a>
-            <a href="#" class="footer-category-link">Micasso</a>
+             <a class="footer-category-link">Micasso</a>
             <a href="https://www.fusiongranito.com/" class="footer-category-link">Fusion</a>
             <a href="https://www.rioceramic.com/" class="footer-category-link">Rio</a>
   
@@ -910,7 +919,7 @@
   
             <a href="https://www.dorsetaustralia.com.au/" class="footer-category-link">Dorset</a>
             <a href="https://www.dormakabagroup.com/en" class="footer-category-link">Dormakaba</a>
-            <a href="#" class="footer-category-link">Suzu</a>
+             <a class="footer-category-link">Suzu</a>
             <a href="https://www.unionironmetal.com/" class="footer-category-link">Union</a>
             <a href="https://www.yalehome.com/us/en/products/door-hardware" class="footer-category-link">Yale</a>
   
@@ -1031,7 +1040,7 @@
             </li>
   
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Terms and conditions</a>
+               <a class="footer-nav-link">Terms and conditions</a>
             </li>
   
             <li class="footer-nav-item">
@@ -1049,15 +1058,15 @@
             </li>
   
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Importers</a>
+               <a class="footer-nav-link">Importers</a>
             </li>
   
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Distributors</a>
+               <a class="footer-nav-link">Distributors</a>
             </li>
   
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Retailers</a>
+               <a class="footer-nav-link">Retailers</a>
             </li>
   
   
