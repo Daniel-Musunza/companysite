@@ -8,9 +8,9 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <!--========== CSS ==========-->
-    <link rel="stylesheet" href="sanitaryware.css">
+    <link rel="stylesheet" href="2page.css">
     <link rel="shortcut icon" href="../../assets/images/logo/logo.png" type="image/x-icon">
-    <title class="small-heading">Sanitary Ware | Megha Marketing EA Ltd</title>
+    <title>Cistern categories | Megha Marketing EA Ltd</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Space+Grotesk:wght@300&display=swap');
       </style>
@@ -22,16 +22,6 @@
       rel="stylesheet">  
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
-      </style>
-      <style>
-        .sanitary{
-          display: flex;
-          justify-content: center;
-        }
-        .sanitary img{
-          width: 50vw;
-          height: auto;
-        }
       </style>
   <style>
    
@@ -83,7 +73,6 @@
         background-color: aliceblue;
         color: black;
       }
-        
 
         .humbuger{
           display: block;
@@ -136,12 +125,18 @@
        .prod-big{
         display: none;
        }
-       .sanitary{
-        position: relative;
-        padding-top:150px;
-        width: 100%;
+       .portfolio .row{ 
+        display: flex;
+        flex-wrap: wrap;
+      }
+     .portfolio .row .box{
+        width: 100%!important;
         height: auto;
-       }
+      }
+      .imeji{
+        width: 100%!important;
+        height: auto;
+      }
         footer{
           padding: 20px;
         }
@@ -150,7 +145,7 @@
     
 
 </head>
-  
+ 
   <body>
    
 
@@ -820,375 +815,561 @@
   
       </nav>
   
-    
-    </header>
+      <div class="mobile-bottom-navigation">
   
-<div class="sanitary">
-  <img class="imeji" src="new.webp" alt="image">
-</div>
-    
-<br>
-
-
-
-   
-   
-    <div class="portfolio" id="portfolio">
-      
-        <div class="row">
-         
-            <div class="box">
-           
-                <img src="water closet.jpg" alt="image">
-                <a  href="../sanitaryware/toilet.html" target="_blank">
-                <div class="content">
-                    <h3>
-                       Water Closets/ Toilets
-                    </h3>
-                    <p>Quality Water Closets/ Toilets</p>
-                    
-                </div>
-              </a>
-            </div>
-         
-
-
-            <div class="box">
-                <img src="wb6.avif" alt="image">
-                <a  href="../sanitaryware/basins.html" target="_blank">
-                <div class="content">
-                    <h3>
-                        Wash Basins
-                    </h3>
-                    <p>Quality Wash basins</p>
-                  
-                </div>
-                </a>
-            </div>
-
-            <div class="box">
-                <img src="cistern (4).webp" alt="image">
-                <a  href="../sanitaryware/cistern.html" target="_blank">
-                <div class="content">
-                    <h3>
-                       Cisterns
-                    </h3>
-                    <p>Quality Cisterns</p>
-                   
-                </div>
-                </a>
-            </div>
-
-            <div class="box">
-                <img src="urinals (3).webp" alt="image">
-                <a  href="../sanitaryware/urinals.html" target="_blank">
-                <div class="content">
-                    <h3>
-                        Urinals
-                    </h3>
-                    <p class="tete">Quality Urinals</p>
-                   
-                </div>
-                </a>
-            </div>
-
-            <div class="box">
-                <img src="big.jpeg" alt="image">
-                <a  href="../sanitaryware/sinks.html" target="_blank">
-                <div class="content">
-                    <h3>
-                       Kitchen Sinks
-                    </h3>
-                    <p>Quality Kitchen Sinks</p>
-                    
-                </div>
-                </a>
-            </div>
-            <div class="box">
-              <img src="ceric.webp" alt="image">
-              <a  href="../sanitaryware/bathtub.html" target="_blank">
-              <div class="content">
-                  <h3>
-                      BathTubs
-                  </h3>
-                  <p>Quality Bathtubs</p>
-                  
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+  
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+  
+          <span class="count">0</span>
+        </button>
+  
+        <button class="action-btn">
+          <ion-icon name="home-outline"></ion-icon>
+        </button>
+  
+        <button class="action-btn">
+          <ion-icon name="heart-outline"></ion-icon>
+  
+          <span class="count">0</span>
+        </button>
+  
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="grid-outline"></ion-icon>
+        </button>
+  
+      </div>
+  
+      <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+  
+        <div class="menu-top">
+          <h2 class="menu-title">Menu</h2>
+  
+          <button class="menu-close-btn" data-mobile-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+  
+        <ul class="mobile-menu-category-list">
+  
+          <li class="menu-category">
+            <a href="../../#" class="menu-title">Home</a>
+          </li>
+  
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title" class="small-heading">Sanitary Ware</p>
+  
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
               </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Sinks</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Faucets</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Showers</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Toilets</a>
+              </li>
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Bath Tubs</a>
+              </li>
+            </ul>
+  
+          </li>
+  
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Tiles</p>
+  
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Kitchen</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Living room</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Outdoor</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Bathroom</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Commercial</a>
+              </li>
+            </ul>
+  
+          </li>
+  
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Tools</p>
+  
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Power Tools</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Power Tools Accessories</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Hand Tools</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Hand Tools </a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Generators</a>
+              </li>
+            </ul>
+  
+          </li>
+  
+          <li class="menu-category">
+  
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Steel And Wire Products</p>
+  
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+  
+            <ul class="submenu-category-list" data-accordion>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Bars</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Tubes</a>
+              </li>
+  
+              <li class="submenu-category">
+                <a href="../../#" class="submenu-title">Wires</a>
+              </li>
+  
+            </ul>
+  
+          </li>
+  
+          <li class="menu-category">
+            <a href="../../#" class="menu-title">About Company</a>
+          </li>
+  
+          <li class="menu-category">
+            <a href="../../#" class="menu-title">Suppliers</a>
+          </li>
+  
+          <li class="menu-category">
+            <a href="../../#" class="menu-title">Careers</a>
+          </li>
+  
+          <li class="menu-category">
+            <a href="../../#" class="menu-title">Contact Us</a>
+          </li>
+        </ul>
+  
+        <div class="menu-bottom">
+  
+  
+  
+  
+  
+  
+          <ul class="menu-social-container">
+  
+            <li>
+              <a href="../../#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
               </a>
+            </li>
+  
+            <li>
+              <a href="../../#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="../../#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="../../#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </nav>
+  
+    </header>
+  <br>
+  
+  
+  
+
+
+
+<div class="portfolio" id="portfolio">
+        
+    <div class="row">
+  
+        <div class="box">
+            <img src="cistern (2).jpeg" alt="image">
+            <div class="content">
+              
+              <p>Cistern </p>
+              
           </div>
         </div>
-    </div>
-     
-
-
   
-
-
-  <!--
-    - FOOTER
-  -->
-
-  <footer>
-
-    <div class="footer-category">
-
-      <div class="container">
-
-        <h2 class="footer-category-title">Brand directory</h2>
-
-        <div class="footer-category-box">
-
-          <h3 class="category-box-title" class="small-heading">Sanitary Ware :</h3>
-
-          <a href="https://www.kohler.com/en" class="footer-category-link">Kohler</a>
-          <a href="https://cobra.lixil.co.za/" class="footer-category-link">Cobra</a>
-          <a href="https://www.grohe.com/en/corporate/homepage.html" class="footer-category-link">Grohe</a>
-          <a href="https://hindware.com/" class="footer-category-link">Hindware</a>
-          <a href="https://www.lycos.com/" class="footer-category-link">Lycos</a>
-          <a href="https://www.signaturehardware.com/" class="footer-category-link">Signature Bathware</a>
-
-
+  
+          
+             
+              <div class="box">
+                <img src="cistern (3).jpeg" alt="image">
+                <div class="content">
+                
+                    <p>Cistern </p>
+                    
+                </div>
+                </div>
+                <div class="box">
+                    <img src="cistern (4).webp" alt="image">
+                    <div class="content">
+                    
+                        <p>Cistern </p>
+                        
+                    </div>
+                    </div>
+                    <div class="box">
+                        <img src="cistern.jpeg" alt="image">
+                        <div class="content">
+                        
+                            <p>Cistern </p>
+                            
+                        </div>
+                        </div>
         </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Ceramic & Porcelain Tiles :</h3>
-
-          <a href="https://www.simpolo.net/" class="footer-category-link">Simpolo</a>
-          <a href="https://themoderngroup.co/modern-tiles" class="footer-category-link">Modern Tiles</a>
-           <a class="footer-category-link">Micasso</a>
-          <a href="https://www.fusiongranito.com/" class="footer-category-link">Fusion</a>
-          <a href="https://www.rioceramic.com/" class="footer-category-link">Rio</a>
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Cabinets IronMongery :</h3>
-
-          <a href="https://www.dorsetaustralia.com.au/" class="footer-category-link">Dorset</a>
-          <a href="https://www.dormakabagroup.com/en" class="footer-category-link">Dormakaba</a>
-           <a class="footer-category-link">Suzu</a>
-          <a href="https://www.unionironmetal.com/" class="footer-category-link">Union</a>
-          <a href="https://www.yalehome.com/us/en/products/door-hardware" class="footer-category-link">Yale</a>
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Hand and Power Tools :</h3>
-
-          <a href="https://www.totalbusiness.com/" class="footer-category-link">Total</a>
-
-        </div>
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Timber :</h3>
-
-          <a href="https://associategroup.in/business_timber.html" class="footer-category-link">Associate</a>
-          <a href="https://kronospan.com/en_EN/company" class="footer-category-link">Kronospam</a>
-
-
-        </div>
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Roofing Sheets :</h3>
-
-          <a href="https://nyumbakenya.co.ke" class="footer-category-link">Nyumba</a>
-          <a href="https://mabati.com/" class="footer-category-link">MRM</a>
-
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Steel and Wire Products :</h3>
-
-          <a href="https://nyumbakenya.co.ke/places/metco-limited/" class="footer-category-link">Nyumba</a>
-          <a href="https://devkigroupke.com/" class="footer-category-link">Devki</a>
-
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Paints :</h3>
-
-          <a href="https://www.duracoat.com/" class="footer-category-link">Basco Paints</a>
-          <a href="https://www.crownpaints.co.ke/" class="footer-category-link">Crown</a>
-
-
-        </div>
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Cement and Construction Chemicals :</h3>
-
-          <a href="https://mombasacement.com/" class="footer-category-link">Mombasa Cement</a>
-          <a href="https://www.lafarge.co.ke/" class="footer-category-link">Bamburi Cement</a>
-          <a href="https://rhinocement.co.za/" class="footer-category-link">Rhino cement</a>
-          <a href="https://ken.sika.com/en/construction/concrete.html" class="footer-category-link">Sika</a>
-
-
-        </div>
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Water Solutions:</h3>
-
-          <a href="https://www.davisandshirtliff.com/" class="footer-category-link">Davis and Shirtliff</a>
-
-
-        </div>
-      </div>
-
+  
     </div>
+  </div>
+       
+  
+  
+    <!--
+      - FOOTER
+    -->
+  
+    <footer>
 
-    <div class="footer-nav">
-
-      <div class="container">
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Popular Products</h2>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="../sanitaryware/sanitaryware.html" class="footer-nav-link" class="small-heading">Sanitary Ware</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="../Tiles/tiles.html" class="footer-nav-link" class="small-heading">Tiles</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="../ironmongery/im.html" class="footer-nav-link">Cabinets Iron Mongery</a>
-          </li>
-
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Products</h2>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="../otherProducts/op.html" class="footer-nav-link">New products</a>
-          </li>
-
-
-
-          <li class="footer-nav-item">
-            <a href="../contact/contact.html" class="footer-nav-link">Contact us</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="https://maps.app.goo.gl/VLhhzdRRm4UtXavP8" class="footer-nav-link">Sitemap</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Our Company</h2>
-          </li>
-
-          <li class="footer-nav-item">
-             <a class="footer-nav-link">Terms and conditions</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="../about-main/about/about.html" class="footer-nav-link">About us</a>
-          </li>
-
-
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Services</h2>
-          </li>
-
-          <li class="footer-nav-item">
-             <a class="footer-nav-link">Importers</a>
-          </li>
-
-          <li class="footer-nav-item">
-             <a class="footer-nav-link">Distributors</a>
-          </li>
-
-          <li class="footer-nav-item">
-             <a class="footer-nav-link">Retailers</a>
-          </li>
-
-
-
-        </ul>
-
-
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Follow Us</h2>
-          </li>
-
-          <li>
-           
-            <ul class="social-link">
-
-              <li>
-                <a href="https://www.facebook.com/MeghamarketingEAlimited/" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="https://twitter.com/Megha_marketing/status/1462775022808928259" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="https://www.instagram.com/megha_marketing/" class="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
-                  <ion-icon name="logo-tiktok"></ion-icon>
-                </a>
-              </li>
-    
-            </ul>
-          </li>
-
-        </ul>
-
+      <div class="footer-category">
+  
+        <div class="container">
+  
+          <h2 class="footer-category-title">Brand directory</h2>
+  
+          <div class="footer-category-box">
+  
+            <h3 class="category-box-title" class="small-heading">Sanitary Ware :</h3>
+  
+            <a href="https://www.kohler.com/en" class="footer-category-link">Kohler</a>
+            <a href="https://cobra.lixil.co.za/" class="footer-category-link">Cobra</a>
+            <a href="https://www.grohe.com/en/corporate/homepage.html" class="footer-category-link">Grohe</a>
+            <a href="https://hindware.com/" class="footer-category-link">Hindware</a>
+            <a href="https://www.lycos.com/" class="footer-category-link">Lycos</a>
+            <a href="https://www.signaturehardware.com/" class="footer-category-link">Signature Bathware</a>
+  
+  
+          </div>
+  
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Ceramic & Porcelain Tiles :</h3>
+  
+            <a href="https://www.simpolo.net/" class="footer-category-link">Simpolo</a>
+            <a href="https://themoderngroup.co/modern-tiles" class="footer-category-link">Modern Tiles</a>
+             <a class="footer-category-link">Micasso</a>
+            <a href="https://www.fusiongranito.com/" class="footer-category-link">Fusion</a>
+            <a href="https://www.rioceramic.com/" class="footer-category-link">Rio</a>
+  
+          </div>
+  
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Cabinets IronMongery :</h3>
+  
+            <a href="https://www.dorsetaustralia.com.au/" class="footer-category-link">Dorset</a>
+            <a href="https://www.dormakabagroup.com/en" class="footer-category-link">Dormakaba</a>
+             <a class="footer-category-link">Suzu</a>
+            <a href="https://www.unionironmetal.com/" class="footer-category-link">Union</a>
+            <a href="https://www.yalehome.com/us/en/products/door-hardware" class="footer-category-link">Yale</a>
+  
+          </div>
+  
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Hand and Power Tools :</h3>
+  
+            <a href="https://www.totalbusiness.com/" class="footer-category-link">Total</a>
+  
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Timber :</h3>
+  
+            <a href="https://associategroup.in/business_timber.html" class="footer-category-link">Associate</a>
+            <a href="https://kronospan.com/en_EN/company" class="footer-category-link">Kronospam</a>
+  
+  
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Roofing Sheets :</h3>
+  
+            <a href="https://nyumbakenya.co.ke" class="footer-category-link">Nyumba</a>
+            <a href="https://mabati.com/" class="footer-category-link">MRM</a>
+  
+  
+          </div>
+  
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Steel and Wire Products :</h3>
+  
+            <a href="https://nyumbakenya.co.ke/places/metco-limited/" class="footer-category-link">Nyumba</a>
+            <a href="https://devkigroupke.com/" class="footer-category-link">Devki</a>
+  
+  
+          </div>
+  
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Paints :</h3>
+  
+            <a href="https://www.duracoat.com/" class="footer-category-link">Basco Paints</a>
+            <a href="https://www.crownpaints.co.ke/" class="footer-category-link">Crown</a>
+  
+  
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Cement and Construction Chemicals :</h3>
+  
+            <a href="https://mombasacement.com/" class="footer-category-link">Mombasa Cement</a>
+            <a href="https://www.lafarge.co.ke/" class="footer-category-link">Bamburi Cement</a>
+            <a href="https://rhinocement.co.za/" class="footer-category-link">Rhino cement</a>
+            <a href="https://ken.sika.com/en/construction/concrete.html" class="footer-category-link">Sika</a>
+  
+  
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Water Solutions:</h3>
+  
+            <a href="https://www.davisandshirtliff.com/" class="footer-category-link">Davis and Shirtliff</a>
+  
+  
+          </div>
+        </div>
+  
       </div>
-
-    </div>
-
-
-  </footer>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
-</html>
+  
+      <div class="footer-nav">
+  
+        <div class="container">
+  
+          <ul class="footer-nav-list">
+  
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Popular Products</h2>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="../sanitaryware/sanitaryware.html" class="footer-nav-link" class="small-heading">Sanitary Ware</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="../Tiles/tiles.html" class="footer-nav-link" class="small-heading">Tiles</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="../ironmongery/im.html" class="footer-nav-link">Cabinets Iron Mongery</a>
+            </li>
+  
+  
+          </ul>
+  
+          <ul class="footer-nav-list">
+  
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Products</h2>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="../otherProducts/op.html" class="footer-nav-link">New products</a>
+            </li>
+  
+  
+  
+            <li class="footer-nav-item">
+              <a href="../contact/contact.html" class="footer-nav-link">Contact us</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="https://maps.app.goo.gl/VLhhzdRRm4UtXavP8" class="footer-nav-link">Sitemap</a>
+            </li>
+  
+          </ul>
+  
+          <ul class="footer-nav-list">
+  
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Our Company</h2>
+            </li>
+  
+            <li class="footer-nav-item">
+               <a class="footer-nav-link">Terms and conditions</a>
+            </li>
+  
+            <li class="footer-nav-item">
+              <a href="../about-main/about/about.html" class="footer-nav-link">About us</a>
+            </li>
+  
+  
+  
+          </ul>
+  
+          <ul class="footer-nav-list">
+  
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Services</h2>
+            </li>
+  
+            <li class="footer-nav-item">
+               <a class="footer-nav-link">Importers</a>
+            </li>
+  
+            <li class="footer-nav-item">
+               <a class="footer-nav-link">Distributors</a>
+            </li>
+  
+            <li class="footer-nav-item">
+               <a class="footer-nav-link">Retailers</a>
+            </li>
+  
+  
+  
+          </ul>
+  
+  
+  
+          <ul class="footer-nav-list">
+  
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Follow Us</h2>
+            </li>
+  
+            <li>
+             
+              <ul class="social-link">
+  
+                <li>
+                  <a href="https://www.facebook.com/MeghamarketingEAlimited/" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+      
+                <li>
+                  <a href="https://twitter.com/Megha_marketing/status/1462775022808928259" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+      
+                <li>
+                  <a href="https://www.instagram.com/megha_marketing/" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+      
+                <li>
+                  <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                  </a>
+                </li>
+      
+              </ul>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+      </div>
+  
+  
+    </footer>
+  
+  
+  
+  
+  
+    <!--
+      - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+  
+    <!--
+      - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  </body>
+  
+  </html>
