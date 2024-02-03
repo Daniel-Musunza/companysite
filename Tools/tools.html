@@ -42,6 +42,12 @@
     .prod-small{
       display: none;
     }
+    .desktopbar{
+          display:flex;
+        }
+      .navbar{
+        display: none;
+      }
   }
   @media screen and (max-width: 768px) {
     header{
@@ -65,18 +71,22 @@
     display: flex;
     justify-content: space-between;
   }
-  .header-social-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-  .social-link{
-    width: 30px;
-    border-radius: 2px;
-    background-color: aliceblue;
-    color: black;
-  }
+   .header-social-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      margin-right: 20px;
+      }
+      .header-social-container li{
+        font-size: 20px;
+        padding: 5px;
+      }
+      .social-link{
+        width: 30px;
+        border-radius: 2px;
+        background-color: aliceblue;
+        color: black;
+      }
     
 
     .humbuger{
@@ -85,22 +95,29 @@
       right: 10px;
     }
     .navbar {
-      display: none;
-    }
+        display: none;
+      }
 
-    
-    .desktop-navigation-menu{
-      display: flex;
-      background-color: black;
-      color: aliceblue;
-      padding: 20px;
-    }
+      
+      .desktop-navigation-menu{
+          display: flex;
+          background-color: black;
+          color: aliceblue;
+          padding: 20px;
+        }
+        .desktopbar{
+          display:none;
+        }
     .dropdown-panel {
-display: flex;
-flex-wrap: wrap;
-width: 100%;
-padding-left: 20px;
-}
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 20px;
+        overflow-y: auto;
+        /* Add this line to enable vertical scrolling */
+        max-height: 300px;
+        /* Adjust the max-height as needed */
+      }
     .menu-category{
       margin-top: 20px;
     }
