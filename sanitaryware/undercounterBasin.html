@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--========== BOX ICONS ==========-->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <!--========== BOX ICONS ==========-->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--========== CSS ==========-->
-    <link rel="stylesheet" href="2page.css">
-    <link rel="shortcut icon" href="../../assets/images/logo/logo.png" type="image/x-icon">
-    <title>Basin categories | Megha Marketing EA Ltd</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Space+Grotesk:wght@300&display=swap');
-      </style>
-    <script src="https://kit.fontawesome.com/332a0bbd7c.js" crossorigin="anonymous"></script>
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="2page.css">
+  <link rel="shortcut icon" href="../../assets/images/logo/logo.png" type="image/x-icon">
+  <title>Basin categories | Megha Marketing EA Ltd</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Space+Grotesk:wght@300&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/332a0bbd7c.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">  
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
-      </style>
-   <style>
-   
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+  </style>
+  <style>
     @media screen and (min-width: 768px) {
-      .humbuger{
+      .humbuger {
         display: none;
       }
-     .prod-small{
-          display: none;
-        }
-        .desktopbar{
-          display:flex;
-        }
-      .navbar{
+
+      .prod-small {
+        display: none;
+      }
+
+      .desktopbar {
+        display: flex;
+      }
+
+      .navbar {
         display: none;
       }
     }
+
     @media screen and (max-width: 768px) {
-      header{
+      header {
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -48,106 +52,128 @@
         width: 100%;
         z-index: 999;
       }
-      header img{
-      width: 60px;
-      }
-      .header-top{
-      display: flex;
-      width: 100%;
-      z-index: 9999;
-    }
-    .header-top .container{
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-    .header-social-container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
-    }
-    .social-link{
-      width: 30px;
-      border-radius: 2px;
-      background-color: aliceblue;
-      color: black;
-    }
 
-      .humbuger{
+      header img {
+        width: 60px;
+      }
+
+      .header-top {
+        display: flex;
+        width: 100%;
+        z-index: 9999;
+      }
+
+      .header-top .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .header-social-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .social-link {
+        width: 30px;
+        border-radius: 2px;
+        background-color: aliceblue;
+        color: black;
+      }
+
+      .humbuger {
         display: block;
         font-size: 30px;
         right: 10px;
       }
+
       .navbar {
         display: none;
       }
 
-      
-      .desktop-navigation-menu{
-          display: flex;
-          background-color: black;
-          color: aliceblue;
-          padding: 20px;
-        }
-        .desktopbar{
-          display:none;
-        }
+
+      .desktop-navigation-menu {
+        display: flex;
+        background-color: black;
+        color: aliceblue;
+        padding: 20px;
+      }
+
+      .desktopbar {
+        display: none;
+      }
+
       .dropdown-panel {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding-left: 20px;
-}
-      .menu-category{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 20px;
+        overflow-y: auto;
+        /* Add this line to enable vertical scrolling */
+        max-height: 300px;
+        /* Adjust the max-height as needed */
+      }
+
+      .menu-category {
         margin-top: 20px;
       }
+
       .menu-title,
       .dropdown-panel-list .menu-title {
-        color: antiquewhite!important;
+        color: antiquewhite !important;
       }
-      .dropdown-panel-list{
+
+      .dropdown-panel-list {
         width: 50%;
         display: flex;
         flex-direction: column;
       }
-      .dropdown-panel-list li a{
+
+      .dropdown-panel-list li a {
         padding: 8px 0;
         padding-right: 10px;
         color: #fff;
       }
-     .small-heading{
-      color: yellow!important;
-     }
-     .prod-big{
-      display: none;
-     }
-     .portfolio .row{ 
-      display: flex;
-      flex-wrap: wrap;
-    }
-   .portfolio .row .box{
-      width: 100%!important;
-      height: auto;
-    }
-    .imeji{
-      width: 100%!important;
-      height: auto;
-    }
-      footer{
+
+      .small-heading {
+        color: yellow !important;
+      }
+
+      .prod-big {
+        display: none;
+      }
+
+      .portfolio .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .portfolio .row .box {
+        width: 100% !important;
+        height: auto;
+      }
+
+      .imeji {
+        width: 100% !important;
+        height: auto;
+      }
+
+      footer {
         padding: 20px;
       }
     }
   </style>
-  
+
 
 </head>
 
 <body>
- 
 
- 
-  
+
+
+
 
   <header>
 
@@ -187,7 +213,7 @@
             </a>
           </li>
           <li>
-             <a href="https://www.tiktok.com/@meghamarketing" class="social-link">
+            <a href="https://www.tiktok.com/@meghamarketing" class="social-link">
               <ion-icon name="logo-tiktok"></ion-icon>
             </a>
           </li>
@@ -200,47 +226,47 @@
 
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var menuButton = document.getElementById("menu");
-      var navbar = document.querySelector(".navbar");
-      var productsButton = document.getElementById("products");
-      var dropdownPanel = document.querySelector(".dropdown-panel");
-  
-      menuButton.addEventListener("click", function () {
-        // Toggle the display property when clicking the menu button
-        if (navbar.style.display === "block") {
-          navbar.style.display = "none";
-        } else {
-          navbar.style.display = "block";
-        }
+      document.addEventListener("DOMContentLoaded", function () {
+        var menuButton = document.getElementById("menu");
+        var navbar = document.querySelector(".navbar");
+        var productsButton = document.getElementById("products");
+        var dropdownPanel = document.querySelector(".dropdown-panel");
+
+        menuButton.addEventListener("click", function () {
+          // Toggle the display property when clicking the menu button
+          if (navbar.style.display === "block") {
+            navbar.style.display = "none";
+          } else {
+            navbar.style.display = "block";
+          }
+        });
+
+        productsButton.addEventListener("click", function () {
+          // Toggle the display property when clicking the products button
+          if (dropdownPanel.style.display === "block") {
+            dropdownPanel.style.display = "none";
+          } else {
+            dropdownPanel.style.display = "block";
+          }
+        });
+
+        // Close the navbar and dropdown panel when clicking outside of them
+        document.addEventListener("click", function (event) {
+          if (!event.target.closest("#menu, .navbar, #products, .dropdown-panel")) {
+            navbar.style.display = "none";
+            dropdownPanel.style.display = "none";
+          }
+        });
       });
-  
-      productsButton.addEventListener("click", function () {
-        // Toggle the display property when clicking the products button
-        if (dropdownPanel.style.display === "block") {
-          dropdownPanel.style.display = "none";
-        } else {
-          dropdownPanel.style.display = "block";
-        }
-      });
-  
-      // Close the navbar and dropdown panel when clicking outside of them
-      document.addEventListener("click", function (event) {
-        if (!event.target.closest("#menu, .navbar, #products, .dropdown-panel")) {
-          navbar.style.display = "none";
-          dropdownPanel.style.display = "none";
-        }
-      });
-    });
-  </script>
-  <nav class="desktop-navigation-menu">
+    </script>
+    <nav class="desktop-navigation-menu">
 
       <div class="container">
 
         <div class="humbuger" id="menu">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <ul class="desktop-menu-category-list navbar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="desktop-menu-category-list navbar">
 
           <li class="menu-category">
             <a href="../../index.html" class="menu-title">Home</a>
@@ -248,7 +274,7 @@
 
           <li class="menu-category">
             <a class="menu-title prod-small" id="products">Products</a>
-           <a class="menu-title prod-big">Products</a>
+            <a class="menu-title prod-big">Products</a>
 
             <div class="dropdown-panel">
 
@@ -317,7 +343,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -471,7 +497,7 @@
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="/otherProducts/op.html"  class="small-heading">Other Products</a>
+                  <a href="/otherProducts/op.html" class="small-heading">Other Products</a>
                 </li>
 
                 <li class="panel-list-item">
@@ -520,7 +546,7 @@
             <a href="../../contact\contact.html" class="menu-title">Contact Us</a>
 
           </li>
-           
+
           </li>
         </ul>
 
@@ -532,7 +558,7 @@
 
           <li class="menu-category">
             <a class="menu-title prod-small" id="products">Products</a>
-           <a class="menu-title prod-big">Products</a>
+            <a class="menu-title prod-big">Products</a>
 
             <div class="dropdown-panel">
 
@@ -601,7 +627,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -755,7 +781,7 @@
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="/otherProducts/op.html"  class="small-heading">Other Products</a>
+                  <a href="/otherProducts/op.html" class="small-heading">Other Products</a>
                 </li>
 
                 <li class="panel-list-item">
@@ -804,7 +830,7 @@
             <a href="../../contact\contact.html" class="menu-title">Contact Us</a>
 
           </li>
-           
+
           </li>
         </ul>
 
@@ -813,324 +839,327 @@
     </nav>
 
   </header>
-  
-    <h1 >Under-Counter Basins </h1>
-  <br>
-  
-  
-  
 
- <div class="portfolio" id="portfolio">
-        
-  <div class="row">
+  <h1>Under-Counter Basins </h1>
+  <br>
+
+
+
+
+  <div class="portfolio" id="portfolio">
+
+    <div class="row">
+
+
+      <div class="box">
+        <img src="../sanitaryware/WASH BASINS/UNDERCOUNTER/IMG_4126.JPG" alt="image">
+        <div class="content">
+          <div class="content">
+
+            <p>Under Counter</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="box">
+        <img src="undercounter.webp" alt="image">
+        <div class="content">
+          <div class="content">
+
+            <p>Under Counter</p>
+
+          </div>
+
+        </div>
+      </div>
 
      
 
       <div class="box">
-          <img src="undercounter.webp" alt="image">
-          <div class="content">
-            <div class="content">
-            
-                <p>Under Counter</p>
-                
-            </div>
-            
-        </div>
-          </div>
-          
-      <div class="box">
-        <img src="../sanitaryware/sinks/BELMONTE UNDER COUNTER BASIN- 601 (OVAL SHAPED).jpg" alt="image">
+        <img src="../sanitaryware/sinks/KOHLER LADENA 591 X 410MM UNDERCOUNTER LAVATORY 2215IN-0.jpg" alt="image">
         <div class="content">
-            
-            <p>BELMONTE UNDER COUNTER BASIN- 601 (OVAL SHAPED)</p>
-            
-        </div>
-        </div>
-       
-        <div class="box">
-            <img src="../sanitaryware/sinks/KOHLER LADENA 591 X 410MM UNDERCOUNTER LAVATORY 2215IN-0.jpg" alt="image">
-            <div class="content">
-            
-                <p>KOHLER LADENA 591 X 410MM UNDERCOUNTER LAVATORY </p>
-                
-            </div>
-          </div>
-         
-  
 
+          <p>KOHLER LADENA 591 X 410MM UNDERCOUNTER LAVATORY </p>
+
+        </div>
       </div>
+
+
+
+    </div>
 
   </div>
-</div>
+  </div>
 
-       
-  
-  
-    <!--
+
+
+
+  <!--
       - FOOTER
     -->
-  
-    <footer>
 
-      <div class="footer-category">
-  
-        <div class="container">
-  
-          <h2 class="footer-category-title">Brand directory</h2>
-  
-          <div class="footer-category-box">
-  
-            <h3 class="category-box-title" class="small-heading">Sanitary Ware :</h3>
-  
-            <a href="https://www.kohler.com/en" class="footer-category-link">Kohler</a>
-            <a href="https://cobra.lixil.co.za/" class="footer-category-link">Cobra</a>
-            <a href="https://www.grohe.com/en/corporate/homepage.html" class="footer-category-link">Grohe</a>
-            <a href="https://hindware.com/" class="footer-category-link">Hindware</a>
-            <a href="https://www.lycos.com/" class="footer-category-link">Lycos</a>
-            <a href="https://www.signaturehardware.com/" class="footer-category-link">Signature Bathware</a>
-  
-  
-          </div>
-  
-          <div class="footer-category-box">
-            <h3 class="category-box-title">Ceramic & Porcelain Tiles :</h3>
-  
-            <a href="https://www.simpolo.net/" class="footer-category-link">Simpolo</a>
-            <a href="https://themoderngroup.co/modern-tiles" class="footer-category-link">Modern Tiles</a>
-             <a class="footer-category-link">Micasso</a>
-            <a href="https://www.fusiongranito.com/" class="footer-category-link">Fusion</a>
-            <a href="https://www.rioceramic.com/" class="footer-category-link">Rio</a>
-  
-          </div>
-  
-          <div class="footer-category-box">
-            <h3 class="category-box-title">Cabinets IronMongery :</h3>
-  
-            <a href="https://www.dorsetaustralia.com.au/" class="footer-category-link">Dorset</a>
-            <a href="https://www.dormakabagroup.com/en" class="footer-category-link">Dormakaba</a>
-             <a class="footer-category-link">Suzu</a>
-            <a href="https://www.unionironmetal.com/" class="footer-category-link">Union</a>
-            <a href="https://www.yalehome.com/us/en/products/door-hardware" class="footer-category-link">Yale</a>
-  
-          </div>
-  
-          <div class="footer-category-box">
-            <h3 class="category-box-title">Hand and Power Tools :</h3>
-  
-            <a href="https://www.totalbusiness.com/" class="footer-category-link">Total</a>
-  
-          </div>
-          <div class="footer-category-box">
-            <h3 class="category-box-title">Timber :</h3>
-  
-            <a href="https://associategroup.in/business_timber.html" class="footer-category-link">Associate</a>
-            <a href="https://kronospan.com/en_EN/company" class="footer-category-link">Kronospam</a>
-  
-  
-          </div>
-          <div class="footer-category-box">
-            <h3 class="category-box-title">Roofing Sheets :</h3>
-  
-            <a href="https://nyumbakenya.co.ke" class="footer-category-link">Nyumba</a>
-            <a href="https://mabati.com/" class="footer-category-link">MRM</a>
-  
-  
-          </div>
-  
-          <div class="footer-category-box">
-            <h3 class="category-box-title">Steel and Wire Products :</h3>
-  
-            <a href="https://nyumbakenya.co.ke/places/metco-limited/" class="footer-category-link">Nyumba</a>
-            <a href="https://devkigroupke.com/" class="footer-category-link">Devki</a>
-  
-  
-          </div>
-  
-          <div class="footer-category-box">
-            <h3 class="category-box-title">Paints :</h3>
-  
-            <a href="https://www.duracoat.com/" class="footer-category-link">Basco Paints</a>
-            <a href="https://www.crownpaints.co.ke/" class="footer-category-link">Crown</a>
-  
-  
-          </div>
-          <div class="footer-category-box">
-            <h3 class="category-box-title">Cement and Construction Chemicals :</h3>
-  
-            <a href="https://mombasacement.com/" class="footer-category-link">Mombasa Cement</a>
-            <a href="https://www.lafarge.co.ke/" class="footer-category-link">Bamburi Cement</a>
-            <a href="https://rhinocement.co.za/" class="footer-category-link">Rhino cement</a>
-            <a href="https://ken.sika.com/en/construction/concrete.html" class="footer-category-link">Sika</a>
-  
-  
-          </div>
-          <div class="footer-category-box">
-            <h3 class="category-box-title">Water Solutions:</h3>
-  
-            <a href="https://www.davisandshirtliff.com/" class="footer-category-link">Davis and Shirtliff</a>
-  
-  
-          </div>
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Brand directory</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title" class="small-heading">Sanitary Ware :</h3>
+
+          <a href="https://www.kohler.com/en" class="footer-category-link">Kohler</a>
+          <a href="https://cobra.lixil.co.za/" class="footer-category-link">Cobra</a>
+          <a href="https://www.grohe.com/en/corporate/homepage.html" class="footer-category-link">Grohe</a>
+          <a href="https://hindware.com/" class="footer-category-link">Hindware</a>
+          <a href="https://www.lycos.com/" class="footer-category-link">Lycos</a>
+          <a href="https://www.signaturehardware.com/" class="footer-category-link">Signature Bathware</a>
+
+
         </div>
-  
-      </div>
-  
-      <div class="footer-nav">
-  
-        <div class="container">
-  
-          <ul class="footer-nav-list">
-  
-            <li class="footer-nav-item">
-              <h2 class="nav-title">Popular Products</h2>
-            </li>
-  
-            <li class="footer-nav-item">
-              <a href="../sanitaryware/sanitaryware.html" class="footer-nav-link" class="small-heading">Sanitary Ware</a>
-            </li>
-  
-            <li class="footer-nav-item">
-              <a href="../Tiles/tiles.html" class="footer-nav-link" class="small-heading">Tiles</a>
-            </li>
-  
-            <li class="footer-nav-item">
-              <a href="../ironmongery/im.html" class="footer-nav-link">Cabinets Iron Mongery</a>
-            </li>
-  
-  
-          </ul>
-  
-          <ul class="footer-nav-list">
-  
-            <li class="footer-nav-item">
-              <h2 class="nav-title">Products</h2>
-            </li>
-  
-            <li class="footer-nav-item">
-              <a href="../otherProducts/op.html" class="footer-nav-link">New products</a>
-            </li>
-  
-  
-  
-            <li class="footer-nav-item">
-              <a href="../contact/contact.html" class="footer-nav-link">Contact us</a>
-            </li>
-  
-            <li class="footer-nav-item">
-              <a href="https://maps.app.goo.gl/VLhhzdRRm4UtXavP8" class="footer-nav-link">Sitemap</a>
-            </li>
-  
-          </ul>
-  
-          <ul class="footer-nav-list">
-  
-            <li class="footer-nav-item">
-              <h2 class="nav-title">Our Company</h2>
-            </li>
-  
-            <li class="footer-nav-item">
-               <a class="footer-nav-link">Terms and conditions</a>
-            </li>
-  
-            <li class="footer-nav-item">
-              <a href="../about-main/about/about.html" class="footer-nav-link">About us</a>
-            </li>
-  
-  
-  
-          </ul>
-  
-          <ul class="footer-nav-list">
-  
-            <li class="footer-nav-item">
-              <h2 class="nav-title">Services</h2>
-            </li>
-  
-            <li class="footer-nav-item">
-               <a class="footer-nav-link">Importers</a>
-            </li>
-  
-            <li class="footer-nav-item">
-               <a class="footer-nav-link">Distributors</a>
-            </li>
-  
-            <li class="footer-nav-item">
-               <a class="footer-nav-link">Retailers</a>
-            </li>
-  
-  
-  
-          </ul>
-  
-  
-  
-          <ul class="footer-nav-list">
-  
-            <li class="footer-nav-item">
-              <h2 class="nav-title">Follow Us</h2>
-            </li>
-  
-            <li>
-             
-              <ul class="social-link">
-  
-                <li>
-                  <a href="https://www.facebook.com/MeghamarketingEAlimited/" class="social-link">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-      
-                <li>
-                  <a href="https://twitter.com/Megha_marketing/status/1462775022808928259" class="social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
-      
-                <li>
-                  <a href="https://www.instagram.com/megha_marketing/" class="social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
-                </li>
-      
-                <li>
-                  <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
-                    <ion-icon name="logo-tiktok"></ion-icon>
-                  </a>
-                </li>
-      
-              </ul>
-            </li>
-  
-          </ul>
-  
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Ceramic & Porcelain Tiles :</h3>
+
+          <a href="https://www.simpolo.net/" class="footer-category-link">Simpolo</a>
+          <a href="https://themoderngroup.co/modern-tiles" class="footer-category-link">Modern Tiles</a>
+          <a class="footer-category-link">Micasso</a>
+          <a href="https://www.fusiongranito.com/" class="footer-category-link">Fusion</a>
+          <a href="https://www.rioceramic.com/" class="footer-category-link">Rio</a>
+
         </div>
-  
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Cabinets IronMongery :</h3>
+
+          <a href="https://www.dorsetaustralia.com.au/" class="footer-category-link">Dorset</a>
+          <a href="https://www.dormakabagroup.com/en" class="footer-category-link">Dormakaba</a>
+          <a class="footer-category-link">Suzu</a>
+          <a href="https://www.unionironmetal.com/" class="footer-category-link">Union</a>
+          <a href="https://www.yalehome.com/us/en/products/door-hardware" class="footer-category-link">Yale</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Hand and Power Tools :</h3>
+
+          <a href="https://www.totalbusiness.com/" class="footer-category-link">Total</a>
+
+        </div>
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Timber :</h3>
+
+          <a href="https://associategroup.in/business_timber.html" class="footer-category-link">Associate</a>
+          <a href="https://kronospan.com/en_EN/company" class="footer-category-link">Kronospam</a>
+
+
+        </div>
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Roofing Sheets :</h3>
+
+          <a href="https://nyumbakenya.co.ke" class="footer-category-link">Nyumba</a>
+          <a href="https://mabati.com/" class="footer-category-link">MRM</a>
+
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Steel and Wire Products :</h3>
+
+          <a href="https://nyumbakenya.co.ke/places/metco-limited/" class="footer-category-link">Nyumba</a>
+          <a href="https://devkigroupke.com/" class="footer-category-link">Devki</a>
+
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Paints :</h3>
+
+          <a href="https://www.duracoat.com/" class="footer-category-link">Basco Paints</a>
+          <a href="https://www.crownpaints.co.ke/" class="footer-category-link">Crown</a>
+
+
+        </div>
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Cement and Construction Chemicals :</h3>
+
+          <a href="https://mombasacement.com/" class="footer-category-link">Mombasa Cement</a>
+          <a href="https://www.lafarge.co.ke/" class="footer-category-link">Bamburi Cement</a>
+          <a href="https://rhinocement.co.za/" class="footer-category-link">Rhino cement</a>
+          <a href="https://ken.sika.com/en/construction/concrete.html" class="footer-category-link">Sika</a>
+
+
+        </div>
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Water Solutions:</h3>
+
+          <a href="https://www.davisandshirtliff.com/" class="footer-category-link">Davis and Shirtliff</a>
+
+
+        </div>
       </div>
-  
-  
-    </footer>
-  
-  
-  
-  
-  
-  
-    <!--
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="../sanitaryware/sanitaryware.html" class="footer-nav-link" class="small-heading">Sanitary Ware</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="../Tiles/tiles.html" class="footer-nav-link" class="small-heading">Tiles</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="../ironmongery/im.html" class="footer-nav-link">Cabinets Iron Mongery</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="../otherProducts/op.html" class="footer-nav-link">New products</a>
+          </li>
+
+
+
+          <li class="footer-nav-item">
+            <a href="../contact/contact.html" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="https://maps.app.goo.gl/VLhhzdRRm4UtXavP8" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a class="footer-nav-link">Terms and conditions</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="../about-main/about/about.html" class="footer-nav-link">About us</a>
+          </li>
+
+
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a class="footer-nav-link">Importers</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a class="footer-nav-link">Distributors</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a class="footer-nav-link">Retailers</a>
+          </li>
+
+
+
+        </ul>
+
+
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+
+            <ul class="social-link">
+
+              <li>
+                <a href="https://www.facebook.com/MeghamarketingEAlimited/" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://twitter.com/Megha_marketing/status/1462775022808928259" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/megha_marketing/" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
+                  <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+  </footer>
+
+
+
+
+
+
+  <!--
       - custom js link
     -->
-    <script src="./assets/js/script.js"></script>
-  
-    <!--
+  <script src="./assets/js/script.js"></script>
+
+  <!--
       - ionicon link
     -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
-  </body>
-  
-  </html>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
