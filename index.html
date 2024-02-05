@@ -26,123 +26,143 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
- 
 
-<style>
-   
-      .slider {
-        width: 100%;
-        overflow: hidden;
-      }
-    
-      figure {
-        display: flex;
-        width: 400%; /* Set a width that accommodates all slides */
-        margin: 0; /* Remove default margin */
-        transition: transform 0.5s ease-in-out;
-      }
-    
-      .slide1,
-      .slide2,
-      .slide3,
-      .slide4 {
-        width: 25%; /* Set the width of each slide */
-        box-sizing: border-box; /* Include padding and border in the total width */
-      }
-    
-      img {
-        width: 100%;
-        height: auto;
-      }
-    .simpolo-detail{
+
+  <style>
+    .slider {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    figure {
+      display: flex;
+      width: 400%;
+      /* Set a width that accommodates all slides */
+      margin: 0;
+      /* Remove default margin */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide1,
+    .slide2,
+    .slide3,
+    .slide4 {
+      width: 25%;
+      /* Set the width of each slide */
+      box-sizing: border-box;
+      /* Include padding and border in the total width */
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .simpolo-detail {
       font-size: 10px;
       color: rgb(11, 11, 1);
     }
-      @media screen and (min-width: 768px) {
-        .humbuger{
-          display: none;
-        }
-         .prod-small{
-          display: none;
-        }
-        .desktopbar{
-          display:flex;
-        }
-      .navbar{
+
+    @media screen and (min-width: 768px) {
+      .humbuger {
         display: none;
       }
+
+      .prod-small {
+        display: none;
       }
-      @media screen and (max-width: 768px) {
-        header{
-          position: fixed;
-          display: flex;
-          flex-direction: column;
-          margin-top: -50px;
-          width: 100%;
-          z-index: 999;
-        }
-        header img{
+
+      .desktopbar {
+        display: flex;
+      }
+
+      .navbar {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+        width: 100%;
+        z-index: 999;
+      }
+
+      header img {
         width: 60px;
-        }
-        .header-top{
+      }
+
+      .header-top {
         display: flex;
         width: 100%;
         z-index: 9999;
       }
-      .header-top .container{
+
+      .header-top .container {
         width: 100%;
         display: flex;
         justify-content: space-between;
       }
-      .header-social-container{
+
+      .header-social-container {
         display: flex;
         justify-content: center;
         align-items: center;
-      margin-right: 20px;
+        margin-right: 20px;
       }
-      .header-social-container li{
+
+      .header-social-container li {
         font-size: 20px;
         padding: 5px;
       }
-      .social-link{
+
+      .social-link {
         width: 30px;
         border-radius: 2px;
         background-color: aliceblue;
         color: black;
       }
-        .slider {
+
+      .slider {
         overflow: hidden;
         padding-top: 100px;
         width: 100%;
         height: fit-content;
       }
-        .slide1,
-        .slide2,
-        .slide3,
-        .slide4 {
-          height: 100px;
-        }
 
-        .humbuger{
-          display: block;
-          font-size: 30px;
-          right: 10px;
-        }
-        .navbar {
-          display: none;
-        }
+      .slide1,
+      .slide2,
+      .slide3,
+      .slide4 {
+        height: 100px;
+      }
 
-        
-         .desktop-navigation-menu{
-          display: flex;
-          background-color: black;
-          color: aliceblue;
-          padding: 20px;
-        }
-        .desktopbar{
-          display:none;
-        }
-        .dropdown-panel {
+      .humbuger {
+        display: block;
+        font-size: 30px;
+        right: 10px;
+      }
+
+      .navbar {
+        display: none;
+      }
+
+
+      .desktop-navigation-menu {
+        display: flex;
+        background-color: black;
+        color: aliceblue;
+        padding: 20px;
+      }
+
+      .desktopbar {
+        display: none;
+      }
+
+      .dropdown-panel {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -152,35 +172,42 @@
         max-height: 300px;
         /* Adjust the max-height as needed */
       }
-        .menu-category{
-          margin-top: 20px;
-        }
-        .menu-title,
-        .dropdown-panel-list .menu-title {
-          color: antiquewhite!important;
-        }
-        .dropdown-panel-list{
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-        }
-        .dropdown-panel-list li a{
-          padding: 8px 0;
-          padding-right: 10px;
-          color: #fff;
-        }
-       .small-heading{
-        color: yellow!important;
-       }
-       .prod-big{
-        display: none;
-       }
-        footer{
-          padding: 20px;
-        }
+
+      .menu-category {
+        margin-top: 20px;
       }
-</style>
-    
+
+      .menu-title,
+      .dropdown-panel-list .menu-title {
+        color: antiquewhite !important;
+      }
+
+      .dropdown-panel-list {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .dropdown-panel-list li a {
+        padding: 8px 0;
+        padding-right: 10px;
+        color: #fff;
+      }
+
+      .small-heading {
+        color: yellow !important;
+      }
+
+      .prod-big {
+        display: none;
+      }
+
+      footer {
+        padding: 20px;
+      }
+    }
+  </style>
+
 
 </head>
 
@@ -211,7 +238,7 @@
 
       <div class="container">
 
-         <a class="header-logo">
+        <a class="header-logo">
           <img src="assets\images\logo\Logo2.png" alt="Megha's logo" width="120" height="36">
         </a>
 
@@ -243,7 +270,7 @@
             </a>
           </li>
           <li>
-             <a href="https://www.tiktok.com/@meghamarketing" class="social-link">
+            <a href="https://www.tiktok.com/@meghamarketing" class="social-link">
               <ion-icon name="logo-tiktok"></ion-icon>
             </a>
           </li>
@@ -258,7 +285,7 @@
         var navbar = document.querySelector(".navbar");
         var productsButton = document.getElementById("products");
         var dropdownPanel = document.querySelector(".dropdown-panel");
-    
+
         menuButton.addEventListener("click", function () {
           // Toggle the display property when clicking the menu button
           if (navbar.style.display === "block") {
@@ -267,7 +294,7 @@
             navbar.style.display = "block";
           }
         });
-    
+
         productsButton.addEventListener("click", function () {
           // Toggle the display property when clicking the products button
           if (dropdownPanel.style.display === "block") {
@@ -276,7 +303,7 @@
             dropdownPanel.style.display = "block";
           }
         });
-    
+
         // Close the navbar and dropdown panel when clicking outside of them
         document.addEventListener("click", function (event) {
           if (!event.target.closest("#menu, .navbar, #products, .dropdown-panel")) {
@@ -300,16 +327,16 @@
           </li>
 
           <li class="menu-category">
-             <a class="menu-title prod-small" id="products">Products</a>
-             <a class="menu-title prod-big">Products</a>
+            <a class="menu-title prod-small" id="products">Products</a>
+            <a class="menu-title prod-big">Products</a>
             <div class="dropdown-panel">
 
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="sanitaryware\sanitaryware.html"  class="small-heading">Sanitary Ware</a>
+                  <a href="sanitaryware\sanitaryware.html" class="small-heading">Sanitary Ware</a>
                 </li>
-<br>
+                <br>
                 <li class="panel-list-item">
                   <a href="sanitaryware\toilet.html#">Water Closets/ Toilets</a>
                 </li>
@@ -318,7 +345,7 @@
                   <a href="sanitaryware\Faucet\washbasin.html" target="_blank">Faucets</a>
                 </li>
 
-             <li class="panel-list-item">
+                <li class="panel-list-item">
                   <a href="sanitaryware/showers.html">Showers</a>
                 </li>
 
@@ -334,7 +361,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
 
                   </a>
@@ -369,7 +396,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -395,7 +422,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -429,7 +456,7 @@
                   <a href="timber\timber.html">MDF/MFC</a>
                 </li>
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -482,7 +509,7 @@
                   <a href="Tools\tools.html">Water Pump</a>
                 </li>
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -512,7 +539,7 @@
 
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -546,7 +573,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -572,7 +599,7 @@
             <a href="contact\contact.html" class="menu-title">Contact Us</a>
 
           </li>
-           
+
           </li>
         </ul>
         <ul class="desktop-menu-category-list desktopbar">
@@ -582,16 +609,16 @@
           </li>
 
           <li class="menu-category">
-             <a class="menu-title prod-small" id="products">Products</a>
-             <a class="menu-title prod-big">Products</a>
+            <a class="menu-title prod-small" id="products">Products</a>
+            <a class="menu-title prod-big">Products</a>
             <div class="dropdown-panel">
 
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="sanitaryware\sanitaryware.html"  class="small-heading">Sanitary Ware</a>
+                  <a href="sanitaryware\sanitaryware.html" class="small-heading">Sanitary Ware</a>
                 </li>
-<br>
+                <br>
                 <li class="panel-list-item">
                   <a href="sanitaryware\toilet.html#">Water Closets/ Toilets</a>
                 </li>
@@ -600,7 +627,7 @@
                   <a href="sanitaryware\Faucet\washbasin.html" target="_blank">Faucets</a>
                 </li>
 
-             <li class="panel-list-item">
+                <li class="panel-list-item">
                   <a href="showers.html">Showers</a>
                 </li>
 
@@ -616,7 +643,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
 
                   </a>
@@ -651,7 +678,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -677,7 +704,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -711,7 +738,7 @@
                   <a href="timber\timber.html">MDF/MFC</a>
                 </li>
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -764,7 +791,7 @@
                   <a href="Tools\tools.html">Water Pump</a>
                 </li>
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -794,7 +821,7 @@
 
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -828,7 +855,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -854,10 +881,10 @@
             <a href="contact\contact.html" class="menu-title">Contact Us</a>
 
           </li>
-           
+
           </li>
         </ul>
-        
+
 
       </div>
 
@@ -1182,7 +1209,7 @@
           - SIDEBAR
         -->
 
-        <div class="sidebar  has-scrollbar" >
+        <div class="sidebar  has-scrollbar">
 
           <div class="sidebar-category">
 
@@ -1206,16 +1233,16 @@
                     <p class="menu-title1" class="small-heading">Sanitary Ware</p>
                   </div>
 
-                  
+
 
                 </button>
 
-             
+
               </li>
 
               <li class="sidebar-menu-category">
 
-                <button class="sidebar-accordion-menu" >
+                <button class="sidebar-accordion-menu">
 
                   <div class="menu-title-flex">
 
@@ -1223,11 +1250,11 @@
                     <p class="menu-title1">Tiles</p>
                   </div>
 
-                 
+
 
                 </button>
 
-              
+
 
               </li>
 
@@ -1241,11 +1268,11 @@
                     <p class="menu-title1">Iron Mongery</p>
                   </div>
 
-                 
+
 
                 </button>
 
-               
+
 
               </li>
 
@@ -1259,11 +1286,11 @@
                     <p class="menu-title1">Steel</p>
                   </div>
 
-                 
+
 
                 </button>
 
-               
+
 
               </li>
 
@@ -1277,17 +1304,17 @@
                     <p class="menu-title1">Tools</p>
                   </div>
 
-                 
+
 
                 </button>
 
-                
+
 
               </li>
 
               <li class="sidebar-menu-category">
 
-                <button class="sidebar-accordion-menu" >
+                <button class="sidebar-accordion-menu">
 
                   <div class="menu-title-flex">
 
@@ -1295,7 +1322,7 @@
                     <p class="menu-title1">Iron Mongery</p>
                   </div>
 
-                 
+
 
                 </button>
 
@@ -1304,18 +1331,18 @@
 
               <li class="sidebar-menu-category">
 
-                <button class="sidebar-accordion-menu" >
+                <button class="sidebar-accordion-menu">
 
                   <div class="menu-title-flex">
 
                     <p class="menu-title1">Other Products</p>
                   </div>
 
-                 
+
 
                 </button>
 
-               
+
 
               </li>
 
@@ -1340,7 +1367,7 @@
 
                   <div class="showcase-content">
 
-                    <a >
+                    <a>
                       <h4 class="showcase-title">Bars</h4>
                     </a>
 
@@ -1351,14 +1378,14 @@
 
                 <div class="showcase">
 
-                   <a class="showcase-img-box">
+                  <a class="showcase-img-box">
                     <img src="about-main\assets\images\products\faucet.jpeg" alt="" class="showcase-img" width="75"
                       height="75">
                   </a>
 
                   <div class="showcase-content">
 
-                    <a >
+                    <a>
                       <h4 class="showcase-title">Kohler Aleo Faucet</h4>
                     </a>
 
@@ -1369,14 +1396,14 @@
 
                 <div class="showcase">
 
-                   <a class="showcase-img-box">
+                  <a class="showcase-img-box">
                     <img src="about-main\assets\images\products\mabati.jpeg" alt="" class="showcase-img" width="75"
                       height="75">
                   </a>
 
                   <div class="showcase-content">
 
-                    <a >
+                    <a>
                       <h4 class="showcase-title">Mrm Coloured Mabati</h4>
                     </a>
 
@@ -1386,14 +1413,14 @@
 
                 <div class="showcase">
 
-                   <a class="showcase-img-box">
-                    <img src="about-main\assets\images\products\Web capture_17-5-2023_105120_www.kohler.com.jpeg"
-                      alt="" class="showcase-img" width="75" height="75">
+                  <a class="showcase-img-box">
+                    <img src="about-main\assets\images\products\Web capture_17-5-2023_105120_www.kohler.com.jpeg" alt=""
+                      class="showcase-img" width="75" height="75">
                   </a>
 
                   <div class="showcase-content">
 
-                    <a >
+                    <a>
                       <h4 class="showcase-title">Kohler Rain Duet</h4>
                     </a>
 
@@ -1432,14 +1459,13 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box" >
-                      <img src="assets/images/featured/f1.jpg"
-                        alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/featured/f1.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
-                    <div class="showcase-content" >
+                    <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Simpolo</h4>
                       </a>
 
@@ -1453,18 +1479,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets/images/featured/f2.jpg"
-                        alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/featured/f2.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Simpolo</h4>
                       </a>
 
-                       <a class="simpolo-detail">Procelain Tiles 600X600 - Prozzo 8017, 8018, 8019, 8020(MATT)</a>
+                      <a class="simpolo-detail">Procelain Tiles 600X600 - Prozzo 8017, 8018, 8019, 8020(MATT)</a>
 
                     </div>
 
@@ -1472,18 +1497,18 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets/images/featured/DORSET BRITO 6 LEVER COMBISET.HL BRT K SC.jpg"
-                        alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/featured/DORSET BRITO 6 LEVER COMBISET.HL BRT K SC.jpg" alt="" width="70"
+                        class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">DORSET</h4>
                       </a>
 
-                       <a class="simpolo-detail">BRITO 6 LEVER COMBISET.HL BRT K SC</a>
+                      <a class="simpolo-detail">BRITO 6 LEVER COMBISET.HL BRT K SC</a>
 
                     </div>
 
@@ -1491,18 +1516,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets/images/featured/503MRG.webp"
-                        alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/featured/503MRG.webp" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">DORSET</h4>
                       </a>
 
-                       <a class="simpolo-detail">503MRG</a>
+                      <a class="simpolo-detail">503MRG</a>
 
                     </div>
 
@@ -1514,18 +1538,18 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets/images/featured/01_crv-3110-&crv-3110-&-crv-3111-decor-preview.jpg"
-                        alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/featured/01_crv-3110-&crv-3110-&-crv-3111-decor-preview.jpg" alt=""
+                        width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Simpolo</h4>
                       </a>
 
-                       <a class="simpolo-detail">Procelain Tiles 600X1200 - CRV 3110 & CRV 3111 Decor- Preview</a>
+                      <a class="simpolo-detail">Procelain Tiles 600X1200 - CRV 3110 & CRV 3111 Decor- Preview</a>
 
                     </div>
 
@@ -1533,18 +1557,18 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets/images/featured/01_michelangelo-rust-preview(1).jpg"
-                        alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/featured/01_michelangelo-rust-preview(1).jpg" alt="" width="70"
+                        class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Simpolo</h4>
                       </a>
 
-                       <a class="simpolo-detail">Procelain Tiles 600X1200- Michelangelo Rust Preview </a>
+                      <a class="simpolo-detail">Procelain Tiles 600X1200- Michelangelo Rust Preview </a>
 
                     </div>
 
@@ -1552,18 +1576,18 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets/images/featured/DORSET RIM LOCK  BLACK.DG806 GM.jpg"
-                        alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/featured/DORSET RIM LOCK  BLACK.DG806 GM.jpg" alt="" width="70"
+                        class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">DORSET</h4>
                       </a>
 
-                       <a class="simpolo-detail">RIM LOCK  BLACK.DG806 GM</a>
+                      <a class="simpolo-detail">RIM LOCK BLACK.DG806 GM</a>
 
                     </div>
 
@@ -1571,18 +1595,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets/images/featured/Skew.png"
-                        alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/featured/Skew.png" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">DORSET</h4>
                       </a>
 
-                       <a class="simpolo-detail">Skew</a>
+                      <a class="simpolo-detail">Skew</a>
 
                     </div>
 
@@ -1604,17 +1627,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
+                    <a class="showcase-img-box">
                       <img src="assets\images\total\TD614006.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">MIXER(100MM). TD614006</a>
+                      <a class="simpolo-detail">MIXER(100MM). TD614006</a>
 
                     </div>
 
@@ -1622,17 +1645,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
+                    <a class="showcase-img-box">
                       <img src="assets\images\total\TG1262306.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail"> ANGLE GRINDER(2600W). TG1262306</a>
+                      <a class="simpolo-detail"> ANGLE GRINDER(2600W). TG1262306</a>
 
 
                     </div>
@@ -1641,17 +1664,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
+                    <a class="showcase-img-box">
                       <img src="assets\images\total\TGT141181.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">GASOLINE LAWN MOWER 141cc,3.0Kw(4HP)TGT141181</a>
+                      <a class="simpolo-detail">GASOLINE LAWN MOWER 141cc,3.0Kw(4HP)TGT141181</a>
 
 
                     </div>
@@ -1660,17 +1683,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
+                    <a class="showcase-img-box">
                       <img src="assets\images\total\TH116386.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">ROTARY HAMMER(1600W). TH116386</a>
+                      <a class="simpolo-detail">ROTARY HAMMER(1600W). TH116386</a>
 
 
                     </div>
@@ -1683,17 +1706,18 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets\images\total/LITHIUM-ION IMPACT WRENCH - TIWLI2001.jpg" alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets\images\total/LITHIUM-ION IMPACT WRENCH - TIWLI2001.jpg" alt="" width="70"
+                        class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">LITHIUM-ION IMPACT WRENCH - TIWLI2001</a>
+                      <a class="simpolo-detail">LITHIUM-ION IMPACT WRENCH - TIWLI2001</a>
 
 
                     </div>
@@ -1702,17 +1726,18 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets\images/total/GASOLINE CONCRETE VIBRATOR (4000W).TP630-1.jpg" alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets\images/total/GASOLINE CONCRETE VIBRATOR (4000W).TP630-1.jpg" alt="" width="70"
+                        class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">GASOLINE CONCRETE VIBRATOR (4000W)</a>
+                      <a class="simpolo-detail">GASOLINE CONCRETE VIBRATOR (4000W)</a>
 
 
                     </div>
@@ -1721,17 +1746,18 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets\images\total/ROTARY SANDER - TF2041506.jpg" alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets\images\total/ROTARY SANDER - TF2041506.jpg" alt="" width="70"
+                        class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">ROTARY SANDER - TF2041506</a>
+                      <a class="simpolo-detail">ROTARY SANDER - TF2041506</a>
 
 
                     </div>
@@ -1740,17 +1766,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
+                    <a class="showcase-img-box">
                       <img src="assets\images\total/MITRE SAW - TS42142101.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">MITRE SAW - TS42142101</a>
+                      <a class="simpolo-detail">MITRE SAW - TS42142101</a>
 
 
                     </div>
@@ -1773,17 +1799,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
+                    <a class="showcase-img-box">
                       <img src="assets\images\total\TLL305205.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">SELF-LEVELLING LINE LASER(GREEN LASER BEAMS) (0-30MM).TLL305205</a>
+                      <a class="simpolo-detail">SELF-LEVELLING LINE LASER(GREEN LASER BEAMS) (0-30MM).TLL305205</a>
 
                     </div>
 
@@ -1791,17 +1817,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
+                    <a class="showcase-img-box">
                       <img src="assets\images\total\TP190006.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">GASOLINE GENERATOR V:220-240,50Hz,9.0Kw.TP190006</a>
+                      <a class="simpolo-detail">GASOLINE GENERATOR V:220-240,50Hz,9.0Kw.TP190006</a>
 
 
                     </div>
@@ -1810,17 +1836,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
+                    <a class="showcase-img-box">
                       <img src="assets\images\total\TP1150006.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">GASOLINE GENERATOR V:220-240,50Hz,12Kw.TP1150006</a>
+                      <a class="simpolo-detail">GASOLINE GENERATOR V:220-240,50Hz,12Kw.TP1150006</a>
 
                     </div>
 
@@ -1828,17 +1854,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
+                    <a class="showcase-img-box">
                       <img src="assets\images\total\TR111216.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total </h4>
                       </a>
 
-                       <a class="simpolo-detail">ROUTER(1600W) TR111216</a>
+                      <a class="simpolo-detail">ROUTER(1600W) TR111216</a>
 
                     </div>
 
@@ -1850,17 +1876,17 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
+                    <a class="showcase-img-box">
                       <img src="assets/images/total/BENCH VICE  - THT6166.jpg" alt="" width="70" class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">BENCH VICE  - THT6166</a>
+                      <a class="simpolo-detail">BENCH VICE - THT6166</a>
 
 
                     </div>
@@ -1869,17 +1895,18 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets/images/total/CIRCULAR SAW - TS1161856.jpg" alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/total/CIRCULAR SAW - TS1161856.jpg" alt="" width="70"
+                        class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total </h4>
                       </a>
 
-                       <a class="simpolo-detail">CIRCULAR SAW - TS1161856</a>
+                      <a class="simpolo-detail">CIRCULAR SAW - TS1161856</a>
 
                     </div>
 
@@ -1887,17 +1914,18 @@
 
                   <div class="showcase">
 
-                     <a class="showcase-img-box">
-                      <img src="assets/images/total/DEMOLITION BREAKER(1300W). TH213006.jpg" alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/total/DEMOLITION BREAKER(1300W). TH213006.jpg" alt="" width="70"
+                        class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">DEMOLITION BREAKER(1300W). TH213006</a>
+                      <a class="simpolo-detail">DEMOLITION BREAKER(1300W). TH213006</a>
 
 
                     </div>
@@ -1905,17 +1933,18 @@
                   </div>
 
                   <div class="showcase">
-                     <a class="showcase-img-box">
-                      <img src="assets/images/total/INVERTER MMA WELDING MACHINE .TW21602.jpg" alt="" width="70" class="showcase-img">
+                    <a class="showcase-img-box">
+                      <img src="assets/images/total/INVERTER MMA WELDING MACHINE .TW21602.jpg" alt="" width="70"
+                        class="showcase-img">
                     </a>
 
                     <div class="showcase-content">
 
-                      <a >
+                      <a>
                         <h4 class="showcase-title">Total</h4>
                       </a>
 
-                       <a class="simpolo-detail">INVERTER MMA WELDING MACHINE .TW21602</a>
+                      <a class="simpolo-detail">INVERTER MMA WELDING MACHINE .TW21602</a>
 
                     </div>
 
@@ -2132,7 +2161,7 @@
             - PRODUCT GRID
           -->
 
-          <div class="product-main">
+          <div class="product-main" id="newproducts">
 
             <h2 class="title3">New Products</h2>
 
@@ -2142,14 +2171,10 @@
 
                 <div class="showcase-banner">
 
-                  <img
-                    src="assets\images\kholer\79.png"
-                    alt="" width="300" class="product-img default">
-                  <img
-                    src="assets\images\kholer\79.png"
-                    alt="" width="300" class="product-img hover">
+                  <img src="assets\images\kholer\79.png" alt="" width="300" class="product-img default">
+                  <img src="assets\images\kholer\79.png" alt="" width="300" class="product-img hover">
 
-                  <p class="showcase-badge">15%</p>
+                  <p class="showcase-badge"></p>
 
                   <div class="showcase-actions">
 
@@ -2173,7 +2198,7 @@
 
                 </div>
 
-                
+
                 <!-- <div class="showcase-content">
 
                    <a class="showcase-category">KOHLER IRON RIDGE</a>
@@ -2204,14 +2229,10 @@
 
                 <div class="showcase-banner">
 
-                  <img
-                    src="assets\images\kholer\82.png"
-                    alt="" width="300" class="product-img default">
-                  <img
-                    src="assets\images\kholer\82.png"
-                    alt="" width="300" class="product-img hover">
+                  <img src="assets\images\kholer\82.png" alt="" width="300" class="product-img default">
+                  <img src="assets\images\kholer\82.png" alt="" width="300" class="product-img hover">
 
-                  <p class="showcase-badge">15%</p>
+                  <p class="showcase-badge"></p>
 
                   <div class="showcase-actions">
 
@@ -2235,7 +2256,7 @@
 
                 </div>
 
-                
+
                 <!-- <div class="showcase-content">
 
                    <a class="showcase-category">KOHLER IRON RIDGE</a>
@@ -2266,14 +2287,10 @@
 
                 <div class="showcase-banner">
 
-                  <img
-                    src="assets\images\kholer\91.png"
-                    alt="" width="300" class="product-img default">
-                  <img
-                    src="assets\images\kholer\91.png"
-                    alt="" width="300" class="product-img hover">
+                  <img src="assets\images\kholer\91.png" alt="" width="300" class="product-img default">
+                  <img src="assets\images\kholer\91.png" alt="" width="300" class="product-img hover">
 
-                  <p class="showcase-badge">15%</p>
+                  <p class="showcase-badge"></p>
 
                   <div class="showcase-actions">
 
@@ -2297,7 +2314,7 @@
 
                 </div>
 
-                
+
                 <!-- <div class="showcase-content">
 
                    <a class="showcase-category">KOHLER IRON RIDGE</a>
@@ -2328,14 +2345,10 @@
 
                 <div class="showcase-banner">
 
-                  <img
-                    src="assets\images\kholer\94 (2).png"
-                    alt="" width="300" class="product-img default">
-                  <img
-                    src="assets\images\kholer\94 (2).png"
-                    alt="" width="300" class="product-img hover">
+                  <img src="assets\images\kholer\94 (2).png" alt="" width="300" class="product-img default">
+                  <img src="assets\images\kholer\94 (2).png" alt="" width="300" class="product-img hover">
 
-                  <p class="showcase-badge">15%</p>
+                  <p class="showcase-badge"></p>
 
                   <div class="showcase-actions">
 
@@ -2382,19 +2395,15 @@
                 </div> -->
 
               </div>
-
+              <!-- simpolo -->
               <div class="showcase">
 
                 <div class="showcase-banner">
 
-                  <img
-                    src="assets\images\kholer\94.png"
-                    alt="" width="300" class="product-img default">
-                  <img
-                    src="assets\images\kholer\94.png"
-                    alt="" width="300" class="product-img hover">
+                  <img src="Tiles/12.png" alt="" width="300" class="product-img default">
+                  <img src="Tiles/12.png" alt="" width="300" class="product-img hover">
 
-                  <p class="showcase-badge">15%</p>
+                  <p class="showcase-badge"></p>
 
                   <div class="showcase-actions">
 
@@ -2445,14 +2454,10 @@
               <div class="showcase">
 
                 <div class="showcase-banner">
-                  <img
-                    src="assets\images\kholer\96.png"
-                    alt="" width="300" class="product-img default">
-                  <img
-                    src="assets\images\kholer\96.png"
-                    alt="" width="300" class="product-img hover">
+                  <img src="Tiles/13.png" alt="" width="300" class="product-img default">
+                  <img src="Tiles/13.png" alt="" width="300" class="product-img hover">
 
-                  <p class="showcase-badge">15%</p>
+                  <p class="showcase-badge"></p>
 
                   <div class="showcase-actions">
 
@@ -2476,7 +2481,7 @@
 
                 </div>
 
-                
+
                 <!-- <div class="showcase-content">
 
                    <a class="showcase-category">KOHLER IRON RIDGE</a>
@@ -2506,14 +2511,10 @@
               <div class="showcase">
 
                 <div class="showcase-banner">
-                  <img
-                    src="assets\images\kholer\98.png"
-                    alt="" width="300" class="product-img default">
-                  <img
-                    src="assets\images\kholer\98.png"
-                    alt="" width="300" class="product-img hover">
+                  <img src="Tiles/BR1.jpg" alt="" width="300" class="product-img default">
+                  <img src="Tiles/BR1.jpg" alt="" width="300" class="product-img hover">
 
-                  <p class="showcase-badge">15%</p>
+                  <p class="showcase-badge"></p>
 
                   <div class="showcase-actions">
 
@@ -2537,7 +2538,7 @@
 
                 </div>
 
-                
+
                 <!-- <div class="showcase-content">
 
                    <a class="showcase-category">KOHLER IRON RIDGE</a>
@@ -2567,14 +2568,10 @@
               <div class="showcase">
 
                 <div class="showcase-banner">
-                  <img
-                    src="assets\images\kholer\103 (2).png"
-                    alt="" width="300" class="product-img default">
-                  <img
-                    src="assets\images\kholer\103 (2).png"
-                    alt="" width="300" class="product-img hover">
+                  <img src="Tiles/BR2.jpg" alt="" width="300" class="product-img default">
+                  <img src="Tiles/BR2.jpg" alt="" width="300" class="product-img hover">
 
-                  <p class="showcase-badge">15%</p>
+                  <p class="showcase-badge"></p>
 
                   <div class="showcase-actions">
 
@@ -2598,7 +2595,66 @@
 
                 </div>
 
-                
+
+                <!-- <div class="showcase-content">
+
+                   <a class="showcase-category">KOHLER IRON RIDGE</a>
+
+                  <a >
+                    <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">kshs56250.00</p>
+                    <del>kshs75000.00</del>
+                  </div>
+
+                </div> -->
+
+
+              </div>
+              <!-- dorset -->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="assets\images/featured/DORSET RIM LOCK  BLACK.DG806 GM.jpg" alt="" width="300"
+                    class="product-img default">
+                  <img src="assets\images/featured/DORSET RIM LOCK  BLACK.DG806 GM.jpg" alt="" width="300"
+                    class="product-img hover">
+
+                  <p class="showcase-badge"></p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+
                 <!-- <div class="showcase-content">
 
                    <a class="showcase-category">KOHLER IRON RIDGE</a>
@@ -2628,14 +2684,10 @@
               <div class="showcase">
 
                 <div class="showcase-banner">
-                  <img
-                    src="assets\images\kholer\103.png"
-                    alt="" width="300" class="product-img default">
-                  <img
-                    src="assets\images\kholer\103.png"
-                    alt="" width="300" class="product-img hover">
+                  <img src="assets\images/featured/Skew.png" alt="" width="300" class="product-img default">
+                  <img src="assets\images/featured/Skew.png" alt="" width="300" class="product-img hover">
 
-                  <p class="showcase-badge">15%</p>
+                  <p class="showcase-badge"></p>
 
                   <div class="showcase-actions">
 
@@ -2659,68 +2711,7 @@
 
                 </div>
 
-                
-                <!-- <div class="showcase-content">
 
-                   <a class="showcase-category">KOHLER IRON RIDGE</a>
-
-                  <a >
-                    <h3 class="showcase-title">34" undermount single-bowl farmhouse kitchen sink</h3>
-                  </a>
-
-                  <div class="showcase-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </div>
-
-                  <div class="price-box">
-                    <p class="price">kshs56250.00</p>
-                    <del>kshs75000.00</del>
-                  </div>
-
-                </div> -->
-
-
-              </div>
-
-              <div class="showcase">
-
-                <div class="showcase-banner">
-                  <img
-                    src="assets\images\kholer\106.png"
-                    alt="" width="300" class="product-img default">
-                  <img
-                    src="assets\images\kholer\106.png"
-                    alt="" width="300" class="product-img hover">
-
-                  <p class="showcase-badge">15%</p>
-
-                  <div class="showcase-actions">
-
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="repeat-outline"></ion-icon>
-                    </button>
-
-                    <button class="btn-action">
-                      <ion-icon name="bag-add-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-                
                 <!-- <div class="showcase-content">
 
                    <a class="showcase-category">KOHLER IRON RIDGE</a>
@@ -2774,33 +2765,36 @@
         - TESTIMONIALS
       -->
 
-          <div class="testimonial" style="display: flex; flex-direction: column; justify-content: center; width: 100%; text-align: center;">
+          <div class="testimonial"
+            style="display: flex; flex-direction: column; justify-content: center; width: 100%; text-align: center;">
 
             <h2>Quote From CEO</h2>
 
             <div class="testimonial-card" style="display: flex; justify-content: center; flex-wrap: wrap; width: 100%">
-            <div style=" margin-right: 10px;">
-              <img src="./assets/images/boss.jpg" alt="" class="testimonial-banner" width="80" height="80" style=" width: 300px;">
+              <div style=" margin-right: 10px;">
+                <img src="./assets/images/boss.jpg" alt="" class="testimonial-banner" width="80" height="80"
+                  style=" width: 300px;">
 
-              <p class="testimonial-name">Jeegar Shah</p>
+                <p class="testimonial-name">Jeegar Shah</p>
 
-              <p class="testimonial-title"  >Director</p>
+                <p class="testimonial-title">Director</p>
               </div>
-            <div>
+              <div>
 
-              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26"  style=" width: 300px;">
+                <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26"
+                  style=" width: 300px;">
 
-              <p class="testimonial-desc"  >
-                The only way to achieve the impossible is to believe it is possible.
-              </p>
-            </div>
+                <p class="testimonial-desc">
+                  The only way to achieve the impossible is to believe it is possible.
+                </p>
+              </div>
             </div>
 
           </div>
 
 
 
-     
+
 
         </div>
 
@@ -2824,15 +2818,15 @@
 
           <div class="blog-card">
 
-            <a >
+            <a>
               <img src="./assets/images/contractor3.jpg" alt="" width="300" class="blog-banner">
             </a>
 
             <div class="blog-content">
 
-               <a class="blog-category">Client</a>
+              <a class="blog-category">Client</a>
 
-              <a >
+              <a>
                 <h3 class="blog-title">Megha Products are always the best</h3>
               </a>
 
@@ -2846,16 +2840,16 @@
 
           <div class="blog-card">
 
-            <a >
+            <a>
               <img src="assets\images\30.jpg" alt="" class="blog-banner" width="300">
             </a>
 
             <div class="blog-content">
 
-               <a class="blog-category">Contractor</a>
+              <a class="blog-category">Contractor</a>
 
               <h3>
-                 <a class="blog-title">Mambo Shwari</a>
+                <a class="blog-title">Mambo Shwari</a>
               </h3>
 
               <p class="blog-meta">
@@ -2868,16 +2862,16 @@
 
           <div class="blog-card">
 
-            <a >
+            <a>
               <img src="assets\images\31.jpg" alt="" class="blog-banner" width="300">
             </a>
 
             <div class="blog-content">
 
-               <a class="blog-category">Client</a>
+              <a class="blog-category">Client</a>
 
               <h3>
-                 <a class="blog-title">Good Service and delivery of products was fast</a>
+                <a class="blog-title">Good Service and delivery of products was fast</a>
               </h3>
 
               <p class="blog-meta">
@@ -2890,17 +2884,17 @@
 
           <div class="blog-card">
 
-            <a >
+            <a>
               <img src="assets\images\23.avif" alt="Curbside fashion Trends: How to Win the Pickup Battle."
                 class="blog-banner" width="300">
             </a>
 
             <div class="blog-content">
 
-               <a class="blog-category">Chief Enginer Palm Towers</a>
+              <a class="blog-category">Chief Enginer Palm Towers</a>
 
               <h3>
-                 <a class="blog-title">Ever since i started using Megha Products my client satisfaction rates
+                <a class="blog-title">Ever since i started using Megha Products my client satisfaction rates
                   have gone up</a>
               </h3>
 
@@ -2923,21 +2917,21 @@
 
 
 
-  <!--========== CONTACT US ==========-->
-  <section class="contact section bd-container" id="contact">
-    <div class="contact__container bd-grid">
-      <div class="contact__data">
-        <span class="section-subtitle contact__initial">Let's talk</span>
-        <h2 class="section-title contact__initial">Contact us</h2>
-        <p class="contact__description">For Enquiries, Placing Orders or help contact us and we will attend to you
-          quickly, with our 24/7 chat service.</p>
-      </div>
+    <!--========== CONTACT US ==========-->
+    <section class="contact section bd-container" id="contact">
+      <div class="contact__container bd-grid">
+        <div class="contact__data">
+          <span class="section-subtitle contact__initial">Let's talk</span>
+          <h2 class="section-title contact__initial">Contact us</h2>
+          <p class="contact__description">For Enquiries, Placing Orders or help contact us and we will attend to you
+            quickly, with our 24/7 chat service.</p>
+        </div>
 
-      <div class="contact__button">
-        <a href="contact\contact.html" class="button">Contact us now</a>
+        <div class="contact__button">
+          <a href="contact\contact.html" class="button">Contact us now</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
 
@@ -2972,8 +2966,8 @@
           <a href="https://cobra.lixil.co.za/" class="footer-category-link">Cobra</a>
           <a href="https://www.grohe.com/en/corporate/homepage.html" class="footer-category-link">Grohe</a>
           <a href="https://hindware.com/" class="footer-category-link">Hindware</a>
-          <a href="https://www.lycos.com/" class="footer-category-link">Lycos</a>
-          <a href="https://www.signaturehardware.com/" class="footer-category-link">Signature Bathware</a>
+          <a href="https://www.lycosceramic.com/" class="footer-category-link">Lycos</a>
+
 
 
         </div>
@@ -2983,7 +2977,7 @@
 
           <a href="https://www.simpolo.net/" class="footer-category-link">Simpolo</a>
           <a href="https://themoderngroup.co/modern-tiles" class="footer-category-link">Modern Tiles</a>
-           <a class="footer-category-link">Micasso</a>
+          <a class="footer-category-link">Micasso</a>
           <a href="https://www.fusiongranito.com/" class="footer-category-link">Fusion</a>
           <a href="https://www.rioceramic.com/" class="footer-category-link">Rio</a>
 
@@ -2992,10 +2986,11 @@
         <div class="footer-category-box">
           <h3 class="category-box-title">Cabinets IronMongery :</h3>
 
-          <a href="https://www.dorsetaustralia.com.au/" class="footer-category-link">Dorset</a>
+          <a href="https://www.dorsetindia.com/" class="footer-category-link">Dorset</a>
           <a href="https://www.dormakabagroup.com/en" class="footer-category-link">Dormakaba</a>
-           <a class="footer-category-link">Suzu</a>
-          <a href="https://www.unionironmetal.com/" class="footer-category-link">Union</a>
+          <a href="https://www.suzusteel.com" class="footer-category-link">Suzu</a>
+          <a href="https://www.assaabloy.com/ke/en/products/locksets/union-locksets"
+            class="footer-category-link">Union</a>
           <a href="https://www.yalehome.com/us/en/products/door-hardware" class="footer-category-link">Yale</a>
 
         </div>
@@ -3017,7 +3012,7 @@
         <div class="footer-category-box">
           <h3 class="category-box-title">Roofing Sheets :</h3>
 
-          <a href="https://nyumbakenya.co.ke" class="footer-category-link">Nyumba</a>
+          <a href="https://steelitems.com/" class="footer-category-link">Nyumba</a>
           <a href="https://mabati.com/" class="footer-category-link">MRM</a>
 
 
@@ -3026,7 +3021,7 @@
         <div class="footer-category-box">
           <h3 class="category-box-title">Steel and Wire Products :</h3>
 
-          <a href="https://nyumbakenya.co.ke/places/metco-limited/" class="footer-category-link">Nyumba</a>
+          <a href="https://steelitems.com/" class="footer-category-link">Nyumba</a>
           <a href="https://devkigroupke.com/" class="footer-category-link">Devki</a>
 
 
@@ -3047,6 +3042,8 @@
           <a href="https://www.lafarge.co.ke/" class="footer-category-link">Bamburi Cement</a>
           <a href="https://rhinocement.co.za/" class="footer-category-link">Rhino cement</a>
           <a href="https://ken.sika.com/en/construction/concrete.html" class="footer-category-link">Sika</a>
+          <a class="footer-category-link">Dr. Fix It</a>
+          <a class="footer-category-link">Miritini</a>
 
 
         </div>
@@ -3054,6 +3051,15 @@
           <h3 class="category-box-title">Water Solutions:</h3>
 
           <a href="https://www.davisandshirtliff.com/" class="footer-category-link">Davis and Shirtliff</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Other Product Brands:</h3>
+
+          <a class="footer-category-link">Water heaters (Hindware Appliances)</a>
+          <a class="footer-category-link">CPVC Pipes</a>
+          <a class="footer-category-link">Danko Pipes</a>
+          <a class="footer-category-link">Jumbo Chem (Insulation/heat proofing solutions)</a>
 
 
         </div>
@@ -3093,7 +3099,7 @@
           </li>
 
           <li class="footer-nav-item">
-            <a href="../otherProducts/op.html" class="footer-nav-link">New products</a>
+            <a href="/#newproducts" class="footer-nav-link">New products</a>
           </li>
 
 
@@ -3115,7 +3121,7 @@
           </li>
 
           <li class="footer-nav-item">
-             <a class="footer-nav-link">Terms and conditions</a>
+            <a class="footer-nav-link">Terms and conditions</a>
           </li>
 
           <li class="footer-nav-item">
@@ -3133,15 +3139,15 @@
           </li>
 
           <li class="footer-nav-item">
-             <a class="footer-nav-link">Importers</a>
+            <a class="footer-nav-link">Importers</a>
           </li>
 
           <li class="footer-nav-item">
-             <a class="footer-nav-link">Distributors</a>
+            <a class="footer-nav-link">Distributors</a>
           </li>
 
           <li class="footer-nav-item">
-             <a class="footer-nav-link">Retailers</a>
+            <a class="footer-nav-link">Retailers</a>
           </li>
 
 
@@ -3157,7 +3163,7 @@
           </li>
 
           <li>
-           
+
             <ul class="social-link">
 
               <li>
@@ -3165,19 +3171,19 @@
                   <ion-icon name="logo-facebook"></ion-icon>
                 </a>
               </li>
-    
+
               <li>
                 <a href="https://twitter.com/Megha_marketing/status/1462775022808928259" class="social-link">
                   <ion-icon name="logo-twitter"></ion-icon>
                 </a>
               </li>
-    
+
               <li>
                 <a href="https://www.instagram.com/megha_marketing/" class="social-link">
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a>
               </li>
-    
+
               <li>
                 <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
                   <ion-icon name="logo-linkedin"></ion-icon>
@@ -3188,7 +3194,7 @@
                   <ion-icon name="logo-tiktok"></ion-icon>
                 </a>
               </li>
-    
+
             </ul>
           </li>
 
