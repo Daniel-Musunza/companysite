@@ -27,81 +27,93 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-<style>
-   
-      @media screen and (min-width: 768px) {
-        .humbuger{
-          display: none;
-        }
-         .prod-small{
-          display: none;
-        }
-        .desktopbar{
-          display:flex;
-        }
-      .navbar{
+  <style>
+    @media screen and (min-width: 768px) {
+      .humbuger {
         display: none;
       }
+
+      .prod-small {
+        display: none;
       }
-      @media screen and (max-width: 768px) {
-        header{
-          position: fixed;
-          display: flex;
-          flex-direction: column;
-          margin-top: -50px;
-          width: 100%;
-          z-index: 999;
-        }
-        header img{
+
+      .desktopbar {
+        display: flex;
+      }
+
+      .navbar {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+        width: 100%;
+        z-index: 999;
+      }
+
+      header img {
         width: 60px;
-        }
-        .header-top{
+      }
+
+      .header-top {
         display: flex;
         width: 100%;
         z-index: 9999;
       }
-      .header-top .container{
+
+      .header-top .container {
         width: 100%;
         display: flex;
         justify-content: space-between;
       }
-      .header-social-container{
+
+      .header-social-container {
         display: flex;
         justify-content: center;
         align-items: center;
-      margin-right: 20px;
+        margin-right: 20px;
       }
-      .header-social-container li{
+
+      .header-social-container li {
         font-size: 20px;
         padding: 5px;
       }
-      .social-link{
+
+      .social-link {
         width: 30px;
         border-radius: 2px;
         background-color: aliceblue;
         color: black;
       }
 
-        .humbuger{
-          display: block;
-          font-size: 30px;
-          right: 10px;
-        }
-        .navbar {
-          display: none;
-        }
+      .humbuger {
+        display: block;
+        font-size: 30px;
+        right: 10px;
+      }
 
-        
-         .desktop-navigation-menu{
-          display: flex;
-          background-color: black;
-          color: aliceblue;
-          padding: 20px;
-        }
-        .desktopbar{
-          display:none;
-        }
-       .dropdown-panel {
+      .navbar {
+        display: none;
+      }
+
+
+      .desktop-navigation-menu {
+        display: flex;
+        background-color: black;
+        color: aliceblue;
+        padding: 20px;
+      }
+
+      .desktopbar {
+        display: none;
+      }
+
+      .dropdown-panel {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -110,39 +122,48 @@
         /* Add this line to enable vertical scrolling */
         max-height: 300px;
         /* Adjust the max-height as needed */
-      }        .menu-category{
-          margin-top: 20px;
-        }
-        .menu-title,
-        .dropdown-panel-list .menu-title {
-          color: antiquewhite!important;
-        }
-        .dropdown-panel-list{
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-        }
-        .dropdown-panel-list li a{
-          padding: 8px 0;
-          padding-right: 10px;
-          color: #fff;
-        }
-       .small-heading{
-        color: yellow!important;
-       }
-       .prod-big{
+      }
+
+      .menu-category {
+        margin-top: 20px;
+      }
+
+      .menu-title,
+      .dropdown-panel-list .menu-title {
+        color: antiquewhite !important;
+      }
+
+      .dropdown-panel-list {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .dropdown-panel-list li a {
+        padding: 8px 0;
+        padding-right: 10px;
+        color: #fff;
+      }
+
+      .small-heading {
+        color: yellow !important;
+      }
+
+      .prod-big {
         display: none;
-       }
-       .careerimage{
+      }
+
+      .careerimage {
         margin: 0;
         width: 100%;
-       }
-        footer{
-          padding: 20px;
-        }
       }
-    </style>
-    
+
+      footer {
+        padding: 20px;
+      }
+    }
+  </style>
+
 
 </head>
 
@@ -156,7 +177,7 @@
 
 
 
-  
+
 
 
 
@@ -173,12 +194,12 @@
 
       <div class="container">
 
-         <a class="header-logo">
+        <a class="header-logo">
           <img src="assets\images\logo\Logo.png" alt="Megha's logo" width="120" height="36">
         </a>
-      
 
-        
+
+
         <ul class="header-social-container">
 
           <li>
@@ -205,7 +226,7 @@
             </a>
           </li>
           <li>
-             <a href="https://www.tiktok.com/@meghamarketing" class="social-link">
+            <a href="https://www.tiktok.com/@meghamarketing" class="social-link">
               <ion-icon name="logo-tiktok"></ion-icon>
             </a>
           </li>
@@ -215,7 +236,7 @@
 
     </div>
 
-   
+
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -223,7 +244,7 @@
         var navbar = document.querySelector(".navbar");
         var productsButton = document.getElementById("products");
         var dropdownPanel = document.querySelector(".dropdown-panel");
-    
+
         menuButton.addEventListener("click", function () {
           // Toggle the display property when clicking the menu button
           if (navbar.style.display === "block") {
@@ -232,7 +253,7 @@
             navbar.style.display = "block";
           }
         });
-    
+
         productsButton.addEventListener("click", function () {
           // Toggle the display property when clicking the products button
           if (dropdownPanel.style.display === "block") {
@@ -241,7 +262,7 @@
             dropdownPanel.style.display = "block";
           }
         });
-    
+
         // Close the navbar and dropdown panel when clicking outside of them
         document.addEventListener("click", function (event) {
           if (!event.target.closest("#menu, .navbar, #products, .dropdown-panel")) {
@@ -265,8 +286,8 @@
           </li>
 
           <li class="menu-category">
-             <a class="menu-title prod-small" id="products">Products</a>
-             <a class="menu-title prod-big">Products</a>
+            <a class="menu-title prod-small" id="products">Products</a>
+            <a class="menu-title prod-big">Products</a>
 
             <div class="dropdown-panel">
 
@@ -300,9 +321,9 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
-                   
-                      
+                  <a>
+
+
                   </a>
                 </li>
 
@@ -335,8 +356,8 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
-                    
+                  <a>
+
                   </a>
                 </li>
 
@@ -361,13 +382,13 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
-                    
+                  <a>
+
                   </a>
                 </li>
 
               </ul>
-              
+
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
@@ -395,8 +416,8 @@
                   <a href="timber\timber.html">MDF/MFC</a>
                 </li>
                 <li class="panel-list-item">
-                  <a >
-                    
+                  <a>
+
                   </a>
                 </li>
 
@@ -427,7 +448,7 @@
                 <li class="panel-list-item">
                   <a href="Tools\tools.html">Generators</a>
                 </li>
-                
+
                 <li class="panel-list-item">
                   <a href="Tools\tools.html">Welding Machines</a>
                 </li>
@@ -435,21 +456,21 @@
                 <li class="panel-list-item">
                   <a href="Tools\tools.html">Light Construction Equipment</a>
                 </li>
-                
+
                 <li class="panel-list-item">
                   <a href="Tools\tools.html">Air Tools</a>
                 </li>
-                
+
                 <li class="panel-list-item">
                   <a href="Tools\tools.html">Garden Tools</a>
                 </li>
-                
+
                 <li class="panel-list-item">
                   <a href="Tools\tools.html">Water Pump</a>
                 </li>
                 <li class="panel-list-item">
-                  <a >
-                    
+                  <a>
+
                   </a>
                 </li>
 
@@ -457,7 +478,7 @@
 
 
 
-              
+
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
@@ -478,18 +499,18 @@
 
 
                 <li class="panel-list-item">
-                  <a >
-                    
+                  <a>
+
                   </a>
                 </li>
 
               </ul>
 
-              
+
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="otherProducts\op.html"  class="small-heading">Other Products</a>
+                  <a href="otherProducts\op.html" class="small-heading">Other Products</a>
                 </li>
 
                 <li class="panel-list-item">
@@ -512,8 +533,8 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
-                   
+                  <a>
+
                   </a>
                 </li>
 
@@ -526,8 +547,8 @@
 
           </li>
 
-          
-          
+
+
           <li class="menu-category">
             <a href="career.html" class="menu-title">Careers</a>
 
@@ -537,288 +558,288 @@
             <a href="contact\contact.html" class="menu-title">Contact Us</a>
 
           </li>
-</ul>
-<ul class="desktop-menu-category-list desktopbar">
+        </ul>
+        <ul class="desktop-menu-category-list desktopbar">
 
-  <li class="menu-category">
-    <a href="index.html" class="menu-title">Home</a>
-  </li>
+          <li class="menu-category">
+            <a href="index.html" class="menu-title">Home</a>
+          </li>
 
-  <li class="menu-category">
-     <a class="menu-title prod-small" id="products">Products</a>
-     <a class="menu-title prod-big">Products</a>
+          <li class="menu-category">
+            <a class="menu-title prod-small" id="products">Products</a>
+            <a class="menu-title prod-big">Products</a>
 
-    <div class="dropdown-panel">
+            <div class="dropdown-panel">
 
-      <ul class="dropdown-panel-list">
+              <ul class="dropdown-panel-list">
 
-        <li class="menu-title">
-          <a href="sanitaryware\sanitaryware.html" class="small-heading">Sanitary Ware</a>
-        </li>
+                <li class="menu-title">
+                  <a href="sanitaryware\sanitaryware.html" class="small-heading">Sanitary Ware</a>
+                </li>
 
-        <li class="panel-list-item">
-          <a href="sanitaryware\sanitaryware.html#">Sinks/Basins</a>
-        </li>
+                <li class="panel-list-item">
+                  <a href="sanitaryware\sanitaryware.html#">Sinks/Basins</a>
+                </li>
 
-        <li class="panel-list-item">
-          <a href="sanitaryware\sanitaryware.html">Faucets</a>
-        </li>
+                <li class="panel-list-item">
+                  <a href="sanitaryware\sanitaryware.html">Faucets</a>
+                </li>
 
-        <li class="panel-list-item">
-          <a href="sanitaryware\sanitaryware.html">Showers</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="sanitaryware\sanitaryware.html">Toilets</a>
-        </li>
-        <li class="panel-list-item">
-          <a href="sanitaryware\urinals.html">Urinals</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="sanitaryware\bathtub.html">Bathtubs</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a >
-           
-              
-          </a>
-        </li>
-
-      </ul>
-
-      <ul class="dropdown-panel-list">
-
-        <li class="menu-title">
-          <a href="Tiles\tiles.html" class="small-heading">Tiles</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tiles\tiles.html">Kitchen</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tiles\tiles.html">Living room</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tiles\tiles.html">Outdoor</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tiles\tiles.html">Bathroom</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tiles\tiles.html">Commercial</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a >
-            
-          </a>
-        </li>
-
-      </ul>
-
-      <ul class="dropdown-panel-list">
-
-        <li class="menu-title">
-          <a href="ironmongery\im.html" class="small-heading">IronMongery</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="ironmongery\im.html">DoorLocks</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="ironmongery\im.html">hinges</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="ironmongery\im.html">safe locks</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a >
-            
-          </a>
-        </li>
-
-      </ul>
-      
-      <ul class="dropdown-panel-list">
-
-        <li class="menu-title">
-          <a href="timber\timber.html" class="small-heading">Wood Products</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="timber\timber.html">Plywood</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="timber\timber.html">Blockboard</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="timber\timber.html">Chipboard</a>
-        </li>
-        <li class="panel-list-item">
-          <a href="timber\timber.html">Marineboard</a>
-        </li>
-        <li class="panel-list-item">
-          <a href="timber\timber.html">Particleboard</a>
-        </li>
-        <li class="panel-list-item">
-          <a href="timber\timber.html">MDF/MFC</a>
-        </li>
-        <li class="panel-list-item">
-          <a >
-            
-          </a>
-        </li>
-
-      </ul>
-
-      <ul class="dropdown-panel-list">
-
-        <li class="menu-title">
-          <a href="Tools\tools.html" class="small-heading">Tools</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tools\tools.html">Power Tools</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tools\tools.html">Power Tools Accessories</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tools\tools.html">Hand Tools</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tools\tools.html">Bench Tools </a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tools\tools.html">Generators</a>
-        </li>
-        
-        <li class="panel-list-item">
-          <a href="Tools\tools.html">Welding Machines</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="Tools\tools.html">Light Construction Equipment</a>
-        </li>
-        
-        <li class="panel-list-item">
-          <a href="Tools\tools.html">Air Tools</a>
-        </li>
-        
-        <li class="panel-list-item">
-          <a href="Tools\tools.html">Garden Tools</a>
-        </li>
-        
-        <li class="panel-list-item">
-          <a href="Tools\tools.html">Water Pump</a>
-        </li>
-        <li class="panel-list-item">
-          <a >
-            
-          </a>
-        </li>
-
-      </ul>
-
-
-
-      
-      <ul class="dropdown-panel-list">
-
-        <li class="menu-title">
-          <a href="steel\steel.html" class="small-heading">Steel and Wire Products</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="steel\steel.html">Bars</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="steel\steel.html">Tubes</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="steel\steel.html">Wires</a>
-        </li>
-
-
-        <li class="panel-list-item">
-          <a >
-            
-          </a>
-        </li>
-
-      </ul>
-
-      
-      <ul class="dropdown-panel-list">
-
-        <li class="menu-title">
-          <a href="otherProducts\op.html"  class="small-heading">Other Products</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="otherProducts\op.html">Timber</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="otherProducts\op.html">Paints</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="otherProducts\op.html">Cement and Construction Chemicals</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a href="otherProducts\op.html">Roofing Solutions</a>
-        </li>
-        <li class="panel-list-item">
-          <a href="otherProducts\op.html">Water Solutions</a>
-        </li>
-
-        <li class="panel-list-item">
-          <a >
-           
-          </a>
-        </li>
-
-      </ul>
-    </div>
-  </li>
-
-  <li class="menu-category">
-    <a href="about-main\about\about.html" class="menu-title">About Company</a>
-
-  </li>
-
-  
-  
-  <li class="menu-category">
-    <a href="career.html" class="menu-title">Careers</a>
-
-  </li>
-
-  <li class="menu-category">
-    <a href="contact\contact.html" class="menu-title">Contact Us</a>
-
-  </li>
-</ul>  
-      
+                <li class="panel-list-item">
+                  <a href="sanitaryware\sanitaryware.html">Showers</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="sanitaryware\sanitaryware.html">Toilets</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="sanitaryware\urinals.html">Urinals</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="sanitaryware\bathtub.html">Bathtubs</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a>
+
+
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="Tiles\tiles.html" class="small-heading">Tiles</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tiles\tiles.html">Kitchen</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tiles\tiles.html">Living room</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tiles\tiles.html">Outdoor</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tiles\tiles.html">Bathroom</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tiles\tiles.html">Commercial</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a>
+
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="ironmongery\im.html" class="small-heading">IronMongery</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="ironmongery\im.html">DoorLocks</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="ironmongery\im.html">hinges</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="ironmongery\im.html">safe locks</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a>
+
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="timber\timber.html" class="small-heading">Wood Products</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="timber\timber.html">Plywood</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="timber\timber.html">Blockboard</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="timber\timber.html">Chipboard</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="timber\timber.html">Marineboard</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="timber\timber.html">Particleboard</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="timber\timber.html">MDF/MFC</a>
+                </li>
+                <li class="panel-list-item">
+                  <a>
+
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="Tools\tools.html" class="small-heading">Tools</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tools\tools.html">Power Tools</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tools\tools.html">Power Tools Accessories</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tools\tools.html">Hand Tools</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tools\tools.html">Bench Tools </a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tools\tools.html">Generators</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tools\tools.html">Welding Machines</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tools\tools.html">Light Construction Equipment</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tools\tools.html">Air Tools</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tools\tools.html">Garden Tools</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="Tools\tools.html">Water Pump</a>
+                </li>
+                <li class="panel-list-item">
+                  <a>
+
+                  </a>
+                </li>
+
+              </ul>
+
+
+
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="steel\steel.html" class="small-heading">Steel and Wire Products</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="steel\steel.html">Bars</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="steel\steel.html">Tubes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="steel\steel.html">Wires</a>
+                </li>
+
+
+                <li class="panel-list-item">
+                  <a>
+
+                  </a>
+                </li>
+
+              </ul>
+
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="otherProducts\op.html" class="small-heading">Other Products</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="otherProducts\op.html">Timber</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="otherProducts\op.html">Paints</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="otherProducts\op.html">Cement and Construction Chemicals</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="otherProducts\op.html">Roofing Solutions</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="otherProducts\op.html">Water Solutions</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a>
+
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="about-main\about\about.html" class="menu-title">About Company</a>
+
+          </li>
+
+
+
+          <li class="menu-category">
+            <a href="career.html" class="menu-title">Careers</a>
+
+          </li>
+
+          <li class="menu-category">
+            <a href="contact\contact.html" class="menu-title">Contact Us</a>
+
+          </li>
+        </ul>
+
 
       </div>
 
@@ -841,19 +862,17 @@
       - BANNER
     -->
 
-    
-
-      
-
-    <img src="./assets\images\career.webp" alt="" class="careerimage" >
 
 
 
 
-    <div> <h1 class="home__title">No vacancy</h1>
-  
+    <img src="./assets/images/job vacancies.jpg" alt="" class="careerimage">
 
-  
+
+
+
+    <div>
+      <h1 class="home__title">No vacancy</h1>
 
 
 
@@ -863,7 +882,10 @@
 
 
 
-</main>
+
+
+
+  </main>
 
 
 
@@ -894,12 +916,12 @@
 
           <h3 class="category-box-title" class="small-heading">Sanitary Ware :</h3>
 
-          <a  class="footer-category-link">Kohler</a>
-          <a  class="footer-category-link">Cobra</a>
-          <a  class="footer-category-link">Grohe</a>
-          <a  class="footer-category-link">Hindware</a>
-          <a  class="footer-category-link">Lycos</a>
-          
+          <a class="footer-category-link">Kohler</a>
+          <a class="footer-category-link">Cobra</a>
+          <a class="footer-category-link">Grohe</a>
+          <a class="footer-category-link">Hindware</a>
+          <a class="footer-category-link">Lycos</a>
+
 
 
         </div>
@@ -907,44 +929,44 @@
         <div class="footer-category-box">
           <h3 class="category-box-title">Ceramic & Porcelain Tiles :</h3>
 
-          <a  class="footer-category-link">Simpolo</a>
-          <a  class="footer-category-link">Modern Tiles</a>
-           <a class="footer-category-link">Micasso</a>
-          <a  class="footer-category-link">Fusion</a>
-          <a  class="footer-category-link">Rio</a>
+          <a class="footer-category-link">Simpolo</a>
+          <a class="footer-category-link">Modern Tiles</a>
+          <a class="footer-category-link">Micasso</a>
+          <a class="footer-category-link">Fusion</a>
+          <a class="footer-category-link">Rio</a>
 
         </div>
 
         <div class="footer-category-box">
           <h3 class="category-box-title">Cabinets IronMongery :</h3>
 
-          <a  class="footer-category-link">Dorset</a>
-          <a  class="footer-category-link">Dormakaba</a>
-           <a   class="footer-category-link">Suzu</a>
-          <a  class="footer-category-link">Union</a>
-          <a  class="footer-category-link">Yale</a>
+          <a class="footer-category-link">Dorset</a>
+          <a class="footer-category-link">Dormakaba</a>
+          <a class="footer-category-link">Suzu</a>
+          <a class="footer-category-link">Union</a>
+          <a class="footer-category-link">Yale</a>
 
         </div>
 
         <div class="footer-category-box">
           <h3 class="category-box-title">Hand and Power Tools :</h3>
 
-          <a  class="footer-category-link">Total</a>
+          <a class="footer-category-link">Total</a>
 
         </div>
         <div class="footer-category-box">
           <h3 class="category-box-title">Timber :</h3>
 
-          <a  class="footer-category-link">Associate</a>
-          <a  class="footer-category-link">Kronospam</a>
+          <a class="footer-category-link">Associate</a>
+          <a class="footer-category-link">Kronospam</a>
 
 
         </div>
         <div class="footer-category-box">
           <h3 class="category-box-title">Roofing Sheets :</h3>
 
-          <a  class="footer-category-link">Nyumba</a>
-          <a  class="footer-category-link">MRM</a>
+          <a class="footer-category-link">Nyumba</a>
+          <a class="footer-category-link">MRM</a>
 
 
         </div>
@@ -952,8 +974,8 @@
         <div class="footer-category-box">
           <h3 class="category-box-title">Steel and Wire Products :</h3>
 
-          <a  class="footer-category-link">Nyumba</a>
-          <a  class="footer-category-link">Devki</a>
+          <a class="footer-category-link">Nyumba</a>
+          <a class="footer-category-link">Devki</a>
 
 
         </div>
@@ -961,27 +983,27 @@
         <div class="footer-category-box">
           <h3 class="category-box-title">Paints :</h3>
 
-          <a  class="footer-category-link">Basco Paints</a>
-          <a  class="footer-category-link">Crown</a>
+          <a class="footer-category-link">Basco Paints</a>
+          <a class="footer-category-link">Crown</a>
 
 
         </div>
         <div class="footer-category-box">
           <h3 class="category-box-title">Cement and Construction Chemicals :</h3>
 
-          <a  class="footer-category-link">Mombasa Cement</a>
-          <a  class="footer-category-link">Bamburi Cement</a>
-          <a  class="footer-category-link">Rhino cement</a>
-          <a  class="footer-category-link">Sika</a>
-          <a  class="footer-category-link">Dr. Fix It</a>
+          <a class="footer-category-link">Mombasa Cement</a>
+          <a class="footer-category-link">Bamburi Cement</a>
+          <a class="footer-category-link">Rhino cement</a>
+          <a class="footer-category-link">Sika</a>
+          <a class="footer-category-link">Dr. Fix It</a>
           <a class="footer-category-link">Miritini</a>
 
 
         </div>
-           <div class="footer-category-box">
+        <div class="footer-category-box">
           <h3 class="category-box-title">Water Solutions:</h3>
 
-          <a  class="footer-category-link">Davis and Shirtliff</a>
+          <a class="footer-category-link">Davis and Shirtliff</a>
 
 
         </div>
@@ -1031,7 +1053,7 @@
           </li>
 
           <li class="footer-nav-item">
-             <a href="/#newproducts" class="footer-nav-link">New products</a>
+            <a href="/#newproducts" class="footer-nav-link">New products</a>
           </li>
 
 
@@ -1042,7 +1064,7 @@
 
           <li class="footer-nav-item">
             <a href="https://maps.app.goo.gl/VLhhzdRRm4UtXavP8" class="footer-nav-link">Sitemap Mombasa</a>
-            
+
             <a href="https://maps.app.goo.gl/a4tDWmv2Go5NUWbT9" class="footer-nav-link">Sitemap Nairobi</a>
           </li>
 
@@ -1055,7 +1077,7 @@
           </li>
 
           <li class="footer-nav-item">
-        <!-- <a class="footer-nav-link">Terms and conditions</a> -->
+            <!-- <a class="footer-nav-link">Terms and conditions</a> -->
           </li>
 
           <li class="footer-nav-item">
@@ -1073,15 +1095,15 @@
           </li>
 
           <li class="footer-nav-item">
-             <a class="footer-nav-link">Importers</a>
+            <a class="footer-nav-link">Importers</a>
           </li>
 
           <li class="footer-nav-item">
-             <a class="footer-nav-link">Distributors</a>
+            <a class="footer-nav-link">Distributors</a>
           </li>
 
           <li class="footer-nav-item">
-             <a class="footer-nav-link">Retailers</a>
+            <a class="footer-nav-link">Retailers</a>
           </li>
 
 
@@ -1097,7 +1119,7 @@
           </li>
 
           <li>
-           
+
             <ul class="social-link">
 
               <li>
@@ -1105,19 +1127,19 @@
                   <ion-icon name="logo-facebook"></ion-icon>
                 </a>
               </li>
-    
+
               <li>
                 <a href="https://twitter.com/Megha_marketing/status/1462775022808928259" class="social-link">
                   <ion-icon name="logo-twitter"></ion-icon>
                 </a>
               </li>
-    
+
               <li>
                 <a href="https://www.instagram.com/megha_marketing/" class="social-link">
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a>
               </li>
-    
+
               <li>
                 <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
                   <ion-icon name="logo-linkedin"></ion-icon>
@@ -1128,7 +1150,7 @@
                   <ion-icon name="logo-tiktok"></ion-icon>
                 </a>
               </li>
-    
+
             </ul>
           </li>
 
