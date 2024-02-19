@@ -1,114 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--========== BOX ICONS ==========-->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <!--========== BOX ICONS ==========-->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--========== CSS ==========-->
-    <link rel="stylesheet" href="tools.css">
-    <link rel="shortcut icon" href="../../assets/images/logo/logo.png" type="image/x-icon">
-    <title>Tools | Megha Marketing EA Ltd</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Space+Grotesk:wght@300&display=swap');
-      </style>
-    <script src="https://kit.fontawesome.com/332a0bbd7c.js" crossorigin="anonymous"></script>
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="tools.css">
+  <link rel="shortcut icon" href="../../assets/images/logo/favicon.ico" type="image/x-icon">
+  <title>Tools | Megha Marketing EA Ltd</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Space+Grotesk:wght@300&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/332a0bbd7c.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">  
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
-      </style>
-       <style>
-        .sanitary{
-          display: flex;
-          justify-content: center;
-        }
-        .sanitary img{
-          width: 50vw;
-          height: auto;
-        }
-      </style>
- <style>
-   
-  @media screen and (min-width: 768px) {
-    .humbuger{
-      display: none;
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+  </style>
+  <style>
+    .sanitary {
+      display: flex;
+      justify-content: center;
     }
-    .prod-small{
-      display: none;
+
+    .sanitary img {
+      width: 50vw;
+      height: auto;
     }
-    .desktopbar{
-          display:flex;
-        }
-      .navbar{
+  </style>
+  <style>
+    @media screen and (min-width: 768px) {
+      .humbuger {
         display: none;
       }
-  }
-  @media screen and (max-width: 768px) {
-    header{
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      margin-top: -50px;
-      width: 100%;
-      z-index: 999;
+
+      .prod-small {
+        display: none;
+      }
+
+      .desktopbar {
+        display: flex;
+      }
+
+      .navbar {
+        display: none;
+      }
     }
-    header img{
-    width: 60px;
-    }
-    .header-top{
-    display: flex;
-    width: 100%;
-    z-index: 9999;
-  }
-  .header-top .container{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-   .header-social-container{
+
+    @media screen and (max-width: 768px) {
+      header {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+        width: 100%;
+        z-index: 999;
+      }
+
+      header img {
+        width: 60px;
+      }
+
+      .header-top {
+        display: flex;
+        width: 100%;
+        z-index: 9999;
+      }
+
+      .header-top .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .header-social-container {
         display: flex;
         justify-content: center;
         align-items: center;
-      margin-right: 20px;
+        margin-right: 20px;
       }
-      .header-social-container li{
+
+      .header-social-container li {
         font-size: 20px;
         padding: 5px;
       }
-      .social-link{
+
+      .social-link {
         width: 30px;
         border-radius: 2px;
         background-color: aliceblue;
         color: black;
       }
-    
 
-    .humbuger{
-      display: block;
-      font-size: 30px;
-      right: 10px;
-    }
-    .navbar {
+
+      .humbuger {
+        display: block;
+        font-size: 30px;
+        right: 10px;
+      }
+
+      .navbar {
         display: none;
       }
 
-      
-      .desktop-navigation-menu{
-          display: flex;
-          background-color: black;
-          color: aliceblue;
-          padding: 20px;
-        }
-        .desktopbar{
-          display:none;
-        }
-    .dropdown-panel {
+
+      .desktop-navigation-menu {
+        display: flex;
+        background-color: black;
+        color: aliceblue;
+        padding: 20px;
+      }
+
+      .desktopbar {
+        display: none;
+      }
+
+      .dropdown-panel {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -118,60 +132,70 @@
         max-height: 300px;
         /* Adjust the max-height as needed */
       }
-    .menu-category{
-      margin-top: 20px;
+
+      .menu-category {
+        margin-top: 20px;
+      }
+
+      .menu-title,
+      .dropdown-panel-list .menu-title {
+        color: antiquewhite !important;
+      }
+
+      .dropdown-panel-list {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .dropdown-panel-list li a {
+        padding: 8px 0;
+        padding-right: 10px;
+        color: #fff;
+      }
+
+      .small-heading {
+        color: yellow !important;
+      }
+
+      .prod-big {
+        display: none;
+      }
+
+      .portfolio .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 !important;
+      }
+
+      .portfolio .row .box {
+        width: 100% !important;
+        height: auto;
+
+      }
+
+      .imeji {
+        padding-top: 150px;
+        width: 100% !important;
+        height: auto;
+      }
+
+      footer {
+        padding: 20px;
+      }
     }
-    .menu-title,
-    .dropdown-panel-list .menu-title {
-      color: antiquewhite!important;
-    }
-    .dropdown-panel-list{
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-    }
-    .dropdown-panel-list li a{
-      padding: 8px 0;
-      padding-right: 10px;
-      color: #fff;
-    }
-   .small-heading{
-    color: yellow!important;
-   }
-   .prod-big{
-    display: none;
-   }
-   .portfolio .row{ 
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0!important;
-  }
- .portfolio .row .box{
-    width: 100%!important;
-    height: auto;
-    
-  }
-  .imeji{
-    padding-top: 150px;
-    width: 100%!important;
-    height: auto;
-  }
-    footer{
-      padding: 20px;
-    }
-  }
-</style>
-    
+  </style>
+
 
 </head>
-  
-  <body>
-   
 
-   
-    
+<body>
 
-    
+
+
+
+
+
   <header>
 
     <div class="header-top">
@@ -210,7 +234,7 @@
             </a>
           </li>
           <li>
-             <a href="https://www.tiktok.com/@meghamarketing" class="social-link">
+            <a href="https://www.tiktok.com/@meghamarketing" class="social-link">
               <ion-icon name="logo-tiktok"></ion-icon>
             </a>
           </li>
@@ -228,7 +252,7 @@
         var navbar = document.querySelector(".navbar");
         var productsButton = document.getElementById("products");
         var dropdownPanel = document.querySelector(".dropdown-panel");
-    
+
         menuButton.addEventListener("click", function () {
           // Toggle the display property when clicking the menu button
           if (navbar.style.display === "block") {
@@ -237,7 +261,7 @@
             navbar.style.display = "block";
           }
         });
-    
+
         productsButton.addEventListener("click", function () {
           // Toggle the display property when clicking the products button
           if (dropdownPanel.style.display === "block") {
@@ -246,7 +270,7 @@
             dropdownPanel.style.display = "block";
           }
         });
-    
+
         // Close the navbar and dropdown panel when clicking outside of them
         document.addEventListener("click", function (event) {
           if (!event.target.closest("#menu, .navbar, #products, .dropdown-panel")) {
@@ -271,7 +295,7 @@
 
           <li class="menu-category">
             <a class="menu-title prod-small" id="products">Products</a>
-             <a class="menu-title prod-big">Products</a>
+            <a class="menu-title prod-big">Products</a>
 
             <div class="dropdown-panel">
 
@@ -340,7 +364,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -494,7 +518,7 @@
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="/otherProducts/op.html"  class="small-heading">Other Products</a>
+                  <a href="/otherProducts/op.html" class="small-heading">Other Products</a>
                 </li>
 
                 <li class="panel-list-item">
@@ -543,7 +567,7 @@
             <a href="../../contact\contact.html" class="menu-title">Contact Us</a>
 
           </li>
-           
+
           </li>
         </ul>
         <ul class="desktop-menu-category-list desktopbar">
@@ -554,7 +578,7 @@
 
           <li class="menu-category">
             <a class="menu-title prod-small" id="products">Products</a>
-             <a class="menu-title prod-big">Products</a>
+            <a class="menu-title prod-big">Products</a>
 
             <div class="dropdown-panel">
 
@@ -623,7 +647,7 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a >
+                  <a>
 
                   </a>
                 </li>
@@ -777,7 +801,7 @@
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="/otherProducts/op.html"  class="small-heading">Other Products</a>
+                  <a href="/otherProducts/op.html" class="small-heading">Other Products</a>
                 </li>
 
                 <li class="panel-list-item">
@@ -826,7 +850,7 @@
             <a href="../../contact\contact.html" class="menu-title">Contact Us</a>
 
           </li>
-           
+
           </li>
         </ul>
 
@@ -835,10 +859,10 @@
 
     </nav>
 
-    
+
   </header>
-  
-      <!-- <section class="head" >
+
+  <!-- <section class="head" >
     <div>
        
     </div>
@@ -846,498 +870,417 @@
 
 </section>       -->
 
-<section class="tools2">
-  
-  <div class="sanitary">
-    <img class="imeji" src="t1 (2).jpg" alt="image">
-  </div>
-      
+  <section class="tools2">
+
+    <div class="sanitary">
+      <img class="imeji" src="t1 (2).jpg" alt="image">
+    </div>
+
 
     <br>
-    
 
 
-  
-   
-   
+
+
+
+
     <div class="portfolio" id="portfolio">
-      
+
       <div class="row">
 
-          <div class="box">
-              <img src="pt1.jpg" alt="image">
-              <div class="content">
-                  <h3>
-                     Power Tools
-                  </h3>
-                  
-                  
-              </div>
+        <div class="box">
+          <img src="pt1.jpg" alt="image">
+          <div class="content">
+            <h3>
+              Power Tools
+            </h3>
+
+
           </div>
+        </div>
 
 
 
-          
 
-          <div class="box">
-              <img src="ht1.jpg" alt="image">
-              <div class="content">
-                  <h3>
-                     Hand Tools
-                  </h3>
-                  
-                 
-              </div>
+
+        <div class="box">
+          <img src="ht1.jpg" alt="image">
+          <div class="content">
+            <h3>
+              Hand Tools
+            </h3>
+
+
           </div>
+        </div>
 
-          <div class="box">
-              <img src="bt.jpg" alt="image">
-              <div class="content">
-                  <h3>
-                      Bench Tools
-                  </h3>
-               
-                 
-              </div>
-          </div>
+        <div class="box">
+          <img src="bt.jpg" alt="image">
+          <div class="content">
+            <h3>
+              Bench Tools
+            </h3>
 
-          <div class="box">
-              <img src="g1.jpg" alt="image">
-              <div class="content">
-                  <h3>
-                    Generators
-                  </h3>
-                 
-                  
-              </div>
+
           </div>
-          <div class="box">
-            <img src="Web capture_12-6-2023_113712_www.totalbusiness.com.jpeg" alt="image">
-            <div class="content">
-                <h3>
-                    Welding Machines
-                </h3>
-                
-                
-            </div>
+        </div>
+
+        <div class="box">
+          <img src="g1.jpg" alt="image">
+          <div class="content">
+            <h3>
+              Generators
+            </h3>
+
+
+          </div>
+        </div>
+        <div class="box">
+          <img src="Web capture_12-6-2023_113712_www.totalbusiness.com.jpeg" alt="image">
+          <div class="content">
+            <h3>
+              Welding Machines
+            </h3>
+
+
+          </div>
         </div>
 
 
         <div class="box">
           <img src="Web capture_12-6-2023_113922_www.totalbusiness.com.jpeg" alt="image">
           <div class="content">
-              <h3>
-                 Light Construction Equipment
-              </h3>
-             
-             
-          </div>
-      </div>
+            <h3>
+              Light Construction Equipment
+            </h3>
 
-      <div class="box">
+
+          </div>
+        </div>
+
+        <div class="box">
           <img src="a1.jpg" alt="image">
           <div class="content">
-              <h3>
-                 AirTools
-              </h3>
-             
-              
-          </div>
-      </div>
-      <div class="box">
-        <img src="gt1.jpg" alt="image">
-        <div class="content">
             <h3>
-            Garden Tools
+              AirTools
             </h3>
-           
-            
+
+
+          </div>
         </div>
-    </div>
-    <div class="box">
-      <img src="wp1.jpg" alt="image">
-      <div class="content">
-          <h3>
+        <div class="box">
+          <img src="gt1.jpg" alt="image">
+          <div class="content">
+            <h3>
+              Garden Tools
+            </h3>
+
+
+          </div>
+        </div>
+        <div class="box">
+          <img src="wp1.jpg" alt="image">
+          <div class="content">
+            <h3>
               Water Pump
-          </h3>
-          
-          
-      </div>
-  </div>
+            </h3>
+
+
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="ht2.jpg" alt="image">
+          <div class="content">
+            <h3>
+              Spanner
+            </h3>
+
+
+          </div>
+        </div>
 
       </div>
-  </div>
-   
- 
-
-<!--
-<section class="s1" >
-    <div> <h1 class="title1">SINKS</h1>
-      
     </div>
-    <img class="i1" src="Tiles\k2.jpg" alt="">
-
-    <br>
-    
 
 
-    <div class="home__container bd-container bd-grid">
-      
-       
-        <p class="p1">We provide different categories of sinks ranging from vessel sinks, Undermount sinks, Drop-in sinks, Pedestal sinks, Wall mount sinks, Kitchen sinks to Bathroom sinks.</p>
-  
-        <img class="image3" src="sanitaryware\s1.webp" alt="" >
-          
+
+
+    <footer>
+
+      <div class="footer-category">
+
+        <div class="container">
+
+          <h2 class="footer-category-title">Brand directory</h2>
+
+          <div class="footer-category-box">
+
+            <h3 class="category-box-title" class="small-heading">Sanitary Ware :</h3>
+
+            <a class="footer-category-link">Kohler</a>
+            <a class="footer-category-link">Cobra</a>
+            <a class="footer-category-link">Grohe</a>
+            <a class="footer-category-link">Hindware</a>
+            <a class="footer-category-link">Lycos</a>
+
+
+
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Ceramic & Porcelain Tiles :</h3>
+
+            <a class="footer-category-link">Simpolo</a>
+            <a class="footer-category-link">Modern Tiles</a>
+            <a class="footer-category-link">Micasso</a>
+            <a class="footer-category-link">Fusion</a>
+            <a class="footer-category-link">Rio</a>
+
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Cabinets IronMongery :</h3>
+
+            <a class="footer-category-link">Dorset</a>
+            <a class="footer-category-link">Dormakaba</a>
+            <a class="footer-category-link">Suzu</a>
+            <a class="footer-category-link">Union</a>
+            <a class="footer-category-link">Yale</a>
+
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Hand and Power Tools :</h3>
+
+            <a class="footer-category-link">Total</a>
+
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Timber :</h3>
+
+            <a class="footer-category-link">Associate</a>
+            <a class="footer-category-link">Kronospam</a>
+
+
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Roofing Sheets :</h3>
+
+            <a class="footer-category-link">Nyumba</a>
+            <a class="footer-category-link">MRM</a>
+
+
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Steel and Wire Products :</h3>
+
+            <a class="footer-category-link">Nyumba</a>
+            <a class="footer-category-link">Devki</a>
+
+
+          </div>
+
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Paints :</h3>
+
+            <a class="footer-category-link">Basco Paints</a>
+            <a class="footer-category-link">Crown</a>
+
+
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Cement and Construction Chemicals :</h3>
+
+            <a class="footer-category-link">Mombasa Cement</a>
+            <a class="footer-category-link">Bamburi Cement</a>
+            <a class="footer-category-link">Rhino cement</a>
+            <a class="footer-category-link">Sika</a>
+            <a class="footer-category-link">Dr. Fix It</a>
+            <a class="footer-category-link">Miritini</a>
+
+
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Water Solutions:</h3>
+
+            <a class="footer-category-link">Davis and Shirtliff</a>
+
+
+          </div>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">Other Product Brands:</h3>
+
+            <a class="footer-category-link">Water heaters (Hindware Appliances)</a>
+            <a class="footer-category-link">CPVC Pipes</a>
+            <a class="footer-category-link">Danko Pipes</a>
+            <a class="footer-category-link">Jumbo Chem (Insulation/heat proofing solutions)</a>
+
+
+          </div>
+        </div>
+
       </div>
-     
 
-</section>
-<section class="s1" >
-    <div> <h1 class="title1">Faucets</h1>
-      
-    </div>
-    <img class="i2" src="sanitaryware\Faucet Gold.jpg" alt="">
+      <div class="footer-nav">
 
-    <br>
-    
+        <div class="container">
 
-    <div class="home__container bd-container bd-grid">
-      
-       <div>
-        <p class="p1">We offer several categories of faucets including;<ul>
-            <li>Pull-down Faucets</li>
-            <li>Semi-pro Faucets</li>
-            <li>pull-out Faucets</li>
-            <li>Bridge Faucets</li>
-            <li>Bar Faucets</li>
-            <li>Kitchen Faucets</li>
-            <li>Bathroom Faucets</li>
+          <ul class="footer-nav-list">
+
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Popular Products</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="../sanitaryware/sanitaryware.html" class="footer-nav-link" class="small-heading">Sanitary
+                Ware</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="../Tiles/tiles.html" class="footer-nav-link" class="small-heading">Tiles</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="../ironmongery/im.html" class="footer-nav-link">Cabinets Iron Mongery</a>
+            </li>
+
+
           </ul>
-          </p>
-        </div>
-        <img class="image1" src="sanitaryware\bigfaucet5.jpeg" alt="" >
-          
-      </div>
-     
 
-</section>
-  
+          <ul class="footer-nav-list">
 
-<section class="s1" >
-    <div> <h1 class="title1">Showers</h1>
-      
-    </div>
-    <img class="i2" src="sanitaryware\Shower.jpg" alt="">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Products</h2>
+            </li>
 
-    <br>
-    
+            <li class="footer-nav-item">
+              <a href="/#newproducts" class="footer-nav-link">New products</a>
+            </li>
 
-      <div class="home__container bd-container bd-grid">
-      
-        <div>
-            <p class="p1">We offer several types of shower categories and their accesories including;<ul>
-                <li>Shower heads</li>
-                <li>Trim and valves</li>
-                <li>Fittings</li>
-                <li>Drains</li>
-               
-             
+
+
+            <li class="footer-nav-item">
+              <a href="../contact/contact.html" class="footer-nav-link">Contact us</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="https://maps.app.goo.gl/VLhhzdRRm4UtXavP8" class="footer-nav-link">Sitemap Mombasa</a>
+
+              <a href="https://maps.app.goo.gl/a4tDWmv2Go5NUWbT9" class="footer-nav-link">Sitemap Nairobi</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-nav-list">
+
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Our Company</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <!-- <a class="footer-nav-link">Terms and conditions</a> -->
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="../about-main/about/about.html" class="footer-nav-link">About us</a>
+            </li>
+
+
+
+          </ul>
+
+          <ul class="footer-nav-list">
+
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Services</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a class="footer-nav-link">Importers</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a class="footer-nav-link">Distributors</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a class="footer-nav-link">Retailers</a>
+            </li>
+
+
+
+          </ul>
+
+
+
+          <ul class="footer-nav-list">
+
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Follow Us</h2>
+            </li>
+
+            <li>
+
+              <ul class="social-link">
+
+                <li>
+                  <a href="https://www.facebook.com/MeghamarketingEAlimited/" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://twitter.com/Megha_marketing/status/1462775022808928259" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/megha_marketing/" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                  </a>
+                </li>
+
               </ul>
-              </p>
-         </div>
-         <img class="image1" src="sanitaryware\shower2.jpg" alt="" >
-           
-       </div>
+            </li>
 
-</section>
-<section class="s1" >
-    <div> <h1 class="title1">Toilets & Baths By Design</h1>
-      
-    </div>
-    <img class="i1" src="sanitaryware\Toilet.jpeg" alt="">
-    <img class="i1" src="sanitaryware\baths.jpeg" alt="">
-
-</section>
-    -->
-
-  <!--
-    - FOOTER
-  -->
-
-  <footer>
-
-    <div class="footer-category">
-
-      <div class="container">
-
-        <h2 class="footer-category-title">Brand directory</h2>
-
-        <div class="footer-category-box">
-
-          <h3 class="category-box-title" class="small-heading">Sanitary Ware :</h3>
-
-          <a  class="footer-category-link">Kohler</a>
-          <a  class="footer-category-link">Cobra</a>
-          <a  class="footer-category-link">Grohe</a>
-          <a  class="footer-category-link">Hindware</a>
-          <a  class="footer-category-link">Lycos</a>
-          
-
+          </ul>
 
         </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Ceramic & Porcelain Tiles :</h3>
-
-          <a  class="footer-category-link">Simpolo</a>
-          <a  class="footer-category-link">Modern Tiles</a>
-           <a class="footer-category-link">Micasso</a>
-          <a  class="footer-category-link">Fusion</a>
-          <a  class="footer-category-link">Rio</a>
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Cabinets IronMongery :</h3>
-
-          <a  class="footer-category-link">Dorset</a>
-          <a  class="footer-category-link">Dormakaba</a>
-           <a   class="footer-category-link">Suzu</a>
-          <a  class="footer-category-link">Union</a>
-          <a  class="footer-category-link">Yale</a>
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Hand and Power Tools :</h3>
-
-          <a  class="footer-category-link">Total</a>
-
-        </div>
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Timber :</h3>
-
-          <a  class="footer-category-link">Associate</a>
-          <a  class="footer-category-link">Kronospam</a>
-
-
-        </div>
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Roofing Sheets :</h3>
-
-          <a  class="footer-category-link">Nyumba</a>
-          <a  class="footer-category-link">MRM</a>
-
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Steel and Wire Products :</h3>
-
-          <a  class="footer-category-link">Nyumba</a>
-          <a  class="footer-category-link">Devki</a>
-
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Paints :</h3>
-
-          <a  class="footer-category-link">Basco Paints</a>
-          <a  class="footer-category-link">Crown</a>
-
-
-        </div>
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Cement and Construction Chemicals :</h3>
-
-          <a  class="footer-category-link">Mombasa Cement</a>
-          <a  class="footer-category-link">Bamburi Cement</a>
-          <a  class="footer-category-link">Rhino cement</a>
-          <a  class="footer-category-link">Sika</a>
-          <a  class="footer-category-link">Dr. Fix It</a>
-          <a class="footer-category-link">Miritini</a>
-
-
-        </div>
-           <div class="footer-category-box">
-          <h3 class="category-box-title">Water Solutions:</h3>
-
-          <a  class="footer-category-link">Davis and Shirtliff</a>
-
-
-        </div>
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Other Product Brands:</h3>
-
-          <a class="footer-category-link">Water heaters (Hindware Appliances)</a>
-          <a class="footer-category-link">CPVC Pipes</a>
-          <a class="footer-category-link">Danko Pipes</a>
-          <a class="footer-category-link">Jumbo Chem (Insulation/heat proofing solutions)</a>
-
-
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-nav">
-
-      <div class="container">
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Popular Products</h2>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="../sanitaryware/sanitaryware.html" class="footer-nav-link" class="small-heading">Sanitary Ware</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="../Tiles/tiles.html" class="footer-nav-link" class="small-heading">Tiles</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="../ironmongery/im.html" class="footer-nav-link">Cabinets Iron Mongery</a>
-          </li>
-
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Products</h2>
-          </li>
-
-          <li class="footer-nav-item">
-             <a href="/#newproducts" class="footer-nav-link">New products</a>
-          </li>
-
-
-
-          <li class="footer-nav-item">
-            <a href="../contact/contact.html" class="footer-nav-link">Contact us</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="https://maps.app.goo.gl/VLhhzdRRm4UtXavP8" class="footer-nav-link">Sitemap Mombasa</a>
-            
-            <a href="https://maps.app.goo.gl/a4tDWmv2Go5NUWbT9" class="footer-nav-link">Sitemap Nairobi</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Our Company</h2>
-          </li>
-
-          <li class="footer-nav-item">
-        <!-- <a class="footer-nav-link">Terms and conditions</a> -->
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="../about-main/about/about.html" class="footer-nav-link">About us</a>
-          </li>
-
-
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Services</h2>
-          </li>
-
-          <li class="footer-nav-item">
-             <a class="footer-nav-link">Importers</a>
-          </li>
-
-          <li class="footer-nav-item">
-             <a class="footer-nav-link">Distributors</a>
-          </li>
-
-          <li class="footer-nav-item">
-             <a class="footer-nav-link">Retailers</a>
-          </li>
-
-
-
-        </ul>
-
-
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Follow Us</h2>
-          </li>
-
-          <li>
-           
-            <ul class="social-link">
-
-              <li>
-                <a href="https://www.facebook.com/MeghamarketingEAlimited/" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="https://twitter.com/Megha_marketing/status/1462775022808928259" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="https://www.instagram.com/megha_marketing/" class="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-              <li>
-                <a href="https://ke.linkedin.com/company/megha-marketing-ea-limited/" class="social-link">
-                  <ion-icon name="logo-tiktok"></ion-icon>
-                </a>
-              </li>
-    
-            </ul>
-          </li>
-
-        </ul>
 
       </div>
 
-    </div>
 
-
-  </footer>
+    </footer>
 
 
 
 
 
 
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
